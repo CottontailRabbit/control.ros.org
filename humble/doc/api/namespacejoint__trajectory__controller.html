@@ -111,8 +111,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>resolve_tolerance_s
 <tr class="memitem:a13c30646ca1bd7c1705b8c35199599b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjoint__trajectory__controller_1_1SegmentTolerances.html">SegmentTolerances</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejoint__trajectory__controller.html#a13c30646ca1bd7c1705b8c35199599b1">get_segment_tolerances</a> (rclcpp::Logger &amp;jtc_logger, const <a class="el" href="structjoint__trajectory__controller_1_1SegmentTolerances.html">SegmentTolerances</a> &amp;default_tolerances, const control_msgs::action::FollowJointTrajectory::Goal &amp;goal, const std::vector&lt; std::string &gt; &amp;joints)</td></tr>
 <tr class="memdesc:a13c30646ca1bd7c1705b8c35199599b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate trajectory segment tolerances using data from an action goal.  <a href="namespacejoint__trajectory__controller.html#a13c30646ca1bd7c1705b8c35199599b1">More...</a><br /></td></tr>
 <tr class="separator:a13c30646ca1bd7c1705b8c35199599b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045ca65fbf65046f2b4e4c0bea90ac0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejoint__trajectory__controller.html#a045ca65fbf65046f2b4e4c0bea90ac0d">check_state_tolerance_per_joint</a> (const trajectory_msgs::msg::JointTrajectoryPoint &amp;state_error, int joint_idx, const <a class="el" href="structjoint__trajectory__controller_1_1StateTolerances.html">StateTolerances</a> &amp;state_tolerance, bool show_errors=false)</td></tr>
-<tr class="separator:a045ca65fbf65046f2b4e4c0bea90ac0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca647969eb24296b1c4055ee5b6d175"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejoint__trajectory__controller.html#aaca647969eb24296b1c4055ee5b6d175">check_state_tolerance_per_joint</a> (const trajectory_msgs::msg::JointTrajectoryPoint &amp;state_error, size_t joint_idx, const <a class="el" href="structjoint__trajectory__controller_1_1StateTolerances.html">StateTolerances</a> &amp;state_tolerance, bool show_errors=false)</td></tr>
+<tr class="separator:aaca647969eb24296b1c4055ee5b6d175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a186c999271610b9893485d24f9e0c9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6a186c999271610b9893485d24f9e0c9"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejoint__trajectory__controller.html#a6a186c999271610b9893485d24f9e0c9">mapping</a> (const T &amp;t1, const T &amp;t2)</td></tr>
 <tr class="separator:a6a186c999271610b9893485d24f9e0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +128,8 @@ tl::expected&lt; void, std::string &gt;&#160;</td><td class="memItemRight" valig
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Adolfo Rodriguez Tsouroukdissian </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a045ca65fbf65046f2b4e4c0bea90ac0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a045ca65fbf65046f2b4e4c0bea90ac0d">&#9670;&nbsp;</a></span>check_state_tolerance_per_joint()</h2>
+<a id="aaca647969eb24296b1c4055ee5b6d175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaca647969eb24296b1c4055ee5b6d175">&#9670;&nbsp;</a></span>check_state_tolerance_per_joint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +146,7 @@ tl::expected&lt; void, std::string &gt;&#160;</td><td class="memItemRight" valig
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>joint_idx</em>, </td>
         </tr>
         <tr>
