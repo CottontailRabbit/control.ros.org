@@ -110,6 +110,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad4cb60d6a9fea8090ae1fd793a2c4222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab31927b72af5e4dbe9fa40d31d9ede98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#ab31927b72af5e4dbe9fa40d31d9ede98">configure_sched_fifo</a> (int priority)</td></tr>
 <tr class="separator:ab31927b72af5e4dbe9fa40d31d9ede98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e8b5ed308b76258690bc84b6ccb003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#ab6e8b5ed308b76258690bc84b6ccb003">lock_memory</a> (std::string &amp;message)</td></tr>
+<tr class="separator:ab6e8b5ed308b76258690bc84b6ccb003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -163,6 +165,31 @@ Stuart Glaser </dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Detect if realtime kernel is present. </p><dl class="section return"><dt>Returns</dt><dd>true if realtime kernel is detected </dd></dl>
+
+</div>
+</div>
+<a id="ab6e8b5ed308b76258690bc84b6ccb003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e8b5ed308b76258690bc84b6ccb003">&#9670;&nbsp;</a></span>lock_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool realtime_tools::lock_memory </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Locks the memory pages of the calling thread to prevent page faults. By calling this method, the programs locks all pages mapped into the address space of the calling process and future mappings. This means that the kernel will not swap out the pages to disk i.e., the pages are guaranteed to stay in RAM until later unlocked - which is important for realtime applications. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">message</td><td>a message describing the result of the operation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if memory locking succeeded, false otherwise </dd></dl>
 
 </div>
 </div>

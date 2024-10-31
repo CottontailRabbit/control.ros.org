@@ -20,5 +20,6 @@ var searchData=
   ['loanedcommandinterface_275',['LoanedCommandInterface',['../classhardware__interface_1_1LoanedCommandInterface.html',1,'hardware_interface']]],
   ['loanedstateinterface_276',['LoanedStateInterface',['../classhardware__interface_1_1LoanedStateInterface.html',1,'hardware_interface']]],
   ['lock_277',['lock',['../classrealtime__tools_1_1RealtimePublisher.html#ac9a8f5aa2cc9a0b9bded10f71ec55cfd',1,'realtime_tools::RealtimePublisher']]],
-  ['lowpassfilter_278',['LowPassFilter',['../classcontrol__filters_1_1LowPassFilter.html',1,'control_filters']]]
+  ['lock_5fmemory_278',['lock_memory',['../namespacerealtime__tools.html#ab6e8b5ed308b76258690bc84b6ccb003',1,'realtime_tools']]],
+  ['lowpassfilter_279',['LowPassFilter',['../classcontrol__filters_1_1LowPassFilter.html',1,'control_filters']]]
 ];

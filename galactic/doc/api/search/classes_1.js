@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bcolors_365',['bcolors',['../classspawner_1_1bcolors.html',1,'spawner']]]
+  ['bcolors_366',['bcolors',['../classspawner_1_1bcolors.html',1,'spawner']]]
 ];
