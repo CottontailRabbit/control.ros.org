@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac450b4737a3a04464a8d5e3588eb154d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#ac450b4737a3a04464a8d5e3588eb154d">stop_thread</a> ()</td></tr>
 <tr class="memdesc:ac450b4737a3a04464a8d5e3588eb154d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the callback thread.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#ac450b4737a3a04464a8d5e3588eb154d">More...</a><br /></td></tr>
 <tr class="separator:ac450b4737a3a04464a8d5e3588eb154d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59933bb43653e40f424331255250db4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#ac59933bb43653e40f424331255250db4">get_last_execution_time</a> () const</td></tr>
-<tr class="memdesc:ac59933bb43653e40f424331255250db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last execution time of the async callback method.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#ac59933bb43653e40f424331255250db4">More...</a><br /></td></tr>
-<tr class="separator:ac59933bb43653e40f424331255250db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e0de8d9b70df3cae92f4ea9986c150"><td class="memItemLeft" align="right" valign="top">std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#a39e0de8d9b70df3cae92f4ea9986c150">get_last_execution_time</a> () const</td></tr>
+<tr class="memdesc:a39e0de8d9b70df3cae92f4ea9986c150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last execution time of the async callback method.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#a39e0de8d9b70df3cae92f4ea9986c150">More...</a><br /></td></tr>
+<tr class="separator:a39e0de8d9b70df3cae92f4ea9986c150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44234723688cafc7fe05012256e9ae88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#a44234723688cafc7fe05012256e9ae88">start_thread</a> ()</td></tr>
 <tr class="memdesc:a44234723688cafc7fe05012256e9ae88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and starts the callback thread.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#a44234723688cafc7fe05012256e9ae88">More...</a><br /></td></tr>
 <tr class="separator:a44234723688cafc7fe05012256e9ae88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ class realtime_tools::AsyncFunctionHandler&lt; T &gt;</h3>
 
 <p>Class to handle asynchronous function calls. <a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html" title="Class to handle asynchronous function calls. AsyncFunctionHandler is a class that allows the user to ...">AsyncFunctionHandler</a> is a class that allows the user to have a asynchronous call to the parsed method and be able to set some thread specific parameters. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac59933bb43653e40f424331255250db4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac59933bb43653e40f424331255250db4">&#9670;&nbsp;</a></span>get_last_execution_time()</h2>
+<a id="a39e0de8d9b70df3cae92f4ea9986c150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e0de8d9b70df3cae92f4ea9986c150">&#9670;&nbsp;</a></span>get_last_execution_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +145,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html">realtime_tools::AsyncFunctionHandler</a>&lt; T &gt;::get_last_execution_time </td>
+          <td class="memname">std::chrono::nanoseconds <a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html">realtime_tools::AsyncFunctionHandler</a>&lt; T &gt;::get_last_execution_time </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -159,7 +159,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the last execution time of the async callback method. </p>
-<dl class="section return"><dt>Returns</dt><dd>The last execution time of the async callback method in seconds </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The last execution time of the async callback method in nanoseconds </dd></dl>
 
 </div>
 </div>

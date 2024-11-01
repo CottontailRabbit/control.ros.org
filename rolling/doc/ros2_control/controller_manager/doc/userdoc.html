@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Controller Manager &mdash; ROS2_Control: Rolling Oct 2024 documentation</title>
+  <title>Controller Manager &mdash; ROS2_Control: Rolling Nov 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://control.ros.org/rolling//rolling/doc/ros2_control/controller_manager/doc/userdoc.html" />
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=a1fb126c"></script>
+      <script src="../../../../_static/documentation_options.js?v=5eceff91"></script>
       <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
       <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -377,16 +377,20 @@ It is recommended to test the fallback strategy in simulation before deploying i
 <section id="hardware-spawner">
 <h3><code class="docutils literal notranslate"><span class="pre">hardware_spawner</span></code><a class="headerlink" href="#hardware-spawner" title="Link to this heading"></a></h3>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ros2<span class="w"> </span>run<span class="w"> </span>controller_manager<span class="w"> </span>hardware_spawner<span class="w"> </span>-h
-<span class="go">usage: hardware_spawner [-h] [-c CONTROLLER_MANAGER] (--activate | --configure) hardware_component_name</span>
+<span class="go">usage: hardware_spawner [-h] [-c CONTROLLER_MANAGER] [--controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT]</span>
+<span class="go">                        (--activate | --configure)</span>
+<span class="go">                        hardware_component_names [hardware_component_names ...]</span>
 
 <span class="go">positional arguments:</span>
-<span class="go">  hardware_component_name</span>
-<span class="go">                        The name of the hardware component which should be activated.</span>
+<span class="go">  hardware_component_names</span>
+<span class="go">                        The name of the hardware components which should be activated.</span>
 
 <span class="go">options:</span>
 <span class="go">  -h, --help            show this help message and exit</span>
 <span class="go">  -c CONTROLLER_MANAGER, --controller-manager CONTROLLER_MANAGER</span>
 <span class="go">                        Name of the controller manager ROS node</span>
+<span class="go">  --controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT</span>
+<span class="go">                        Time to wait for the controller manager</span>
 <span class="go">  --activate            Activates the given components. Note: Components are by default configured before activated.</span>
 <span class="go">  --configure           Configures the given components.</span>
 </pre></div>

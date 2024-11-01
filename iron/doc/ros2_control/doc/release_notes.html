@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Release Notes: Humble to Iron &mdash; ROS2_Control: Iron Oct 2024 documentation</title>
+  <title>Release Notes: Humble to Iron &mdash; ROS2_Control: Iron Nov 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://control.ros.org/rolling//iron/doc/ros2_control/doc/release_notes.html" />
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=a1fb126c"></script>
+      <script src="../../../_static/documentation_options.js?v=5eceff91"></script>
       <script src="../../../_static/doctools.js?v=9a2dae69"></script>
       <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -61,6 +61,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../release_notes/release_notes.html">Release Notes</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ros2_control</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#controller-interface">controller_interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#controller-manager">controller_manager</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ros2_controllers/doc/release_notes.html">ros2_controllers</a></li>
@@ -115,6 +116,12 @@
 <p>For details see the controller_manager section.</p>
 <ul class="simple">
 <li><p>The new <code class="docutils literal notranslate"><span class="pre">PoseSensor</span></code> semantic component provides a standard interface for hardware providing cartesian poses (<a class="reference external" href="https://github.com/ros-controls/ros2_control/pull/1775">#1775</a>)</p></li>
+</ul>
+</section>
+<section id="controller-manager">
+<h2>controller_manager<a class="headerlink" href="#controller-manager" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">ros2_control_node</span></code> node now accepts the <code class="docutils literal notranslate"><span class="pre">thread_priority</span></code> parameter to set the scheduler priority of the controller_manager’s RT thread (<a class="reference external" href="https://github.com/ros-controls/ros2_control/pull/1820">#1820</a>).</p></li>
 </ul>
 </section>
 </section>
