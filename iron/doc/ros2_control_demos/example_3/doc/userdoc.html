@@ -246,6 +246,25 @@ Also, you should see changing states in the terminal where launch file is starte
 </pre></div>
 </div>
 </li>
+<li><p>Now you can also switch controllers during runtime, which also changes the command mode automatically. First, you have to load the new controller, for example the <code class="docutils literal notranslate"><span class="pre">forward_position_controller</span></code> if you haven’t changed the launch file argument.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>control<span class="w"> </span>load_controller<span class="w"> </span>forward_position_controller<span class="w"> </span><span class="k">$(</span>ros2<span class="w"> </span>pkg<span class="w"> </span>prefix<span class="w"> </span>ros2_control_demo_example_3<span class="w"> </span>--share<span class="k">)</span>/config/rrbot_multi_interface_forward_controllers.yaml
+ros2<span class="w"> </span>control<span class="w"> </span>set_controller_state<span class="w"> </span>forward_position_controller<span class="w"> </span>inactive
+</pre></div>
+</div>
+<p>Then you can switch controllers using the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>control<span class="w"> </span>switch_controllers<span class="w"> </span>--deactivate<span class="w"> </span>forward_velocity_controller<span class="w"> </span>--activate<span class="w"> </span>forward_position_controller
+</pre></div>
+</div>
+<p>Observe the output of the following CLI commands, and see how the command interfaces are claimed by the new controller.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>control<span class="w"> </span>list_controllers
+ros2<span class="w"> </span>control<span class="w"> </span>list_hardware_interfaces
+</pre></div>
+</div>
+<p>Try now to send commands to the new controller, as described in the previous step.</p>
+</div></blockquote>
+<ol class="arabic" start="7">
 <li><p>To demonstrate illegal controller configuration, use one of the following launch file arguments:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">robot_controller:=forward_illegal1_controller</span></code> or</p></li>
