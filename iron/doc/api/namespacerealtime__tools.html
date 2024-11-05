@@ -112,6 +112,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab31927b72af5e4dbe9fa40d31d9ede98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e8b5ed308b76258690bc84b6ccb003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#ab6e8b5ed308b76258690bc84b6ccb003">lock_memory</a> (std::string &amp;message)</td></tr>
 <tr class="separator:ab6e8b5ed308b76258690bc84b6ccb003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135b868adafe2e5974ad9b6a3e32df2c"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a135b868adafe2e5974ad9b6a3e32df2c">set_thread_affinity</a> (int pid, int core)</td></tr>
+<tr class="separator:a135b868adafe2e5974ad9b6a3e32df2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3878498c007db817e787b85444e1dcff"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a3878498c007db817e787b85444e1dcff">set_current_thread_affinity</a> (int core)</td></tr>
+<tr class="separator:a3878498c007db817e787b85444e1dcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3be2c994caa65e5071b3536b41bc97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a3f3be2c994caa65e5071b3536b41bc97">get_number_of_available_processors</a> ()</td></tr>
+<tr class="separator:a3f3be2c994caa65e5071b3536b41bc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -147,6 +153,24 @@ Stuart Glaser </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if configuring scheduler succeeded </dd></dl>
+
+</div>
+</div>
+<a id="a3f3be2c994caa65e5071b3536b41bc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3be2c994caa65e5071b3536b41bc97">&#9670;&nbsp;</a></span>get_number_of_available_processors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int realtime_tools::get_number_of_available_processors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to get the amount of available cpu cores <a href="https://man7.org/linux/man-pages/man3/sysconf.3.html">https://man7.org/linux/man-pages/man3/sysconf.3.html</a> <a href="https://stackoverflow.com/a/150971">https://stackoverflow.com/a/150971</a> </p><dl class="section return"><dt>Returns</dt><dd>The number of processors currently online (available) </dd></dl>
 
 </div>
 </div>
@@ -190,6 +214,69 @@ Stuart Glaser </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if memory locking succeeded, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a3878498c007db817e787b85444e1dcff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3878498c007db817e787b85444e1dcff">&#9670;&nbsp;</a></span>set_current_thread_affinity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; bool, std::string &gt; realtime_tools::set_current_thread_affinity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>core</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configure the current thread affinity - Tell the scheduler to prefer a certain core for the current thread. </p><dl class="section note"><dt>Note</dt><dd>The threads created by the calling thread will inherit the affinity. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">core</td><td>the cpu number of the core. If a negative number is passed, the affinity is reset to the default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pair of a boolean indicating whether the operation succeeded or not and a message describing the result of the operation </dd></dl>
+
+</div>
+</div>
+<a id="a135b868adafe2e5974ad9b6a3e32df2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135b868adafe2e5974ad9b6a3e32df2c">&#9670;&nbsp;</a></span>set_thread_affinity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; bool, std::string &gt; realtime_tools::set_thread_affinity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>core</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configure the caller thread affinity - Tell the scheduler to prefer a certain core for the current thread. </p><dl class="section note"><dt>Note</dt><dd>The threads created by the calling thread will inherit the affinity. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>the process id of the thread to set the affinity for. If 0 is passed, the affinity is set for the calling thread. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">core</td><td>the cpu number of the core. If a negative number is passed, the affinity is reset to the default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pair of a boolean indicating whether the operation succeeded or not and a message describing the result of the operation </dd></dl>
 
 </div>
 </div>
