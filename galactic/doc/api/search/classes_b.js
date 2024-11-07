@@ -8,5 +8,5 @@ var searchData=
   ['loadedcontrollernamecompleter_432',['LoadedControllerNameCompleter',['../classros2controlcli_1_1api_1_1LoadedControllerNameCompleter.html',1,'ros2controlcli::api']]],
   ['loanedcommandinterface_433',['LoanedCommandInterface',['../classhardware__interface_1_1LoanedCommandInterface.html',1,'hardware_interface']]],
   ['loanedstateinterface_434',['LoanedStateInterface',['../classhardware__interface_1_1LoanedStateInterface.html',1,'hardware_interface']]],
-  ['lowpassfilter_435',['LowPassFilter',['../classcontrol__filters_1_1LowPassFilter.html',1,'control_filters']]]
+  ['lowpassfilter_435',['LowPassFilter',['../classcontrol__filters_1_1LowPassFilter.html',1,'control_filters::LowPassFilter&lt; T &gt;'],['../classcontrol__toolbox_1_1LowPassFilter.html',1,'control_toolbox::LowPassFilter&lt; T &gt;']]]
 ];

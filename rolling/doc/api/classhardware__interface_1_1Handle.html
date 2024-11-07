@@ -113,18 +113,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fb043c4eb8a3d73f53a63e0646d543b"><td class="memItemLeft" align="right" valign="top"><a id="a7fb043c4eb8a3d73f53a63e0646d543b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (const char *interface_name)</td></tr>
 <tr class="separator:a7fb043c4eb8a3d73f53a63e0646d543b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9053aef1cfd0781ac09fe60f2fcfad91"><td class="memItemLeft" align="right" valign="top"><a id="a9053aef1cfd0781ac09fe60f2fcfad91"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (const <a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;other)=default</td></tr>
-<tr class="separator:a9053aef1cfd0781ac09fe60f2fcfad91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5b8ae05d6e34c951e246a3d204f8d2"><td class="memItemLeft" align="right" valign="top"><a id="ade5b8ae05d6e34c951e246a3d204f8d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&amp;other)=default</td></tr>
-<tr class="separator:ade5b8ae05d6e34c951e246a3d204f8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56bcd56f8b383878ca96b72bfb4d89be"><td class="memItemLeft" align="right" valign="top"><a id="a56bcd56f8b383878ca96b72bfb4d89be"></a>
-<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;other)=default</td></tr>
-<tr class="separator:a56bcd56f8b383878ca96b72bfb4d89be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec18378cf40a1e75cac21a1ac3c0f55"><td class="memItemLeft" align="right" valign="top"><a id="abec18378cf40a1e75cac21a1ac3c0f55"></a>
-<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&amp;other)=default</td></tr>
-<tr class="separator:abec18378cf40a1e75cac21a1ac3c0f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c61f485c647180efe94a5ec094b9019"><td class="memItemLeft" align="right" valign="top"><a id="a3c61f485c647180efe94a5ec094b9019"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (const <a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a3c61f485c647180efe94a5ec094b9019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82359160ed810be812d3d6bdf4f6e100"><td class="memItemLeft" align="right" valign="top"><a id="a82359160ed810be812d3d6bdf4f6e100"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a82359160ed810be812d3d6bdf4f6e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4420e46a2ef4c701007f8e79906f7102"><td class="memItemLeft" align="right" valign="top"><a id="a4420e46a2ef4c701007f8e79906f7102"></a>
+<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;other)</td></tr>
+<tr class="separator:a4420e46a2ef4c701007f8e79906f7102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b316a9da039d6c1a075c2d001403a25"><td class="memItemLeft" align="right" valign="top"><a id="a0b316a9da039d6c1a075c2d001403a25"></a>
+<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classhardware__interface_1_1Handle.html">Handle</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a0b316a9da039d6c1a075c2d001403a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02e9389e1f0f14e1a0189afe3e43383"><td class="memItemLeft" align="right" valign="top"><a id="af02e9389e1f0f14e1a0189afe3e43383"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1Handle.html#af02e9389e1f0f14e1a0189afe3e43383">operator bool</a> () const</td></tr>
 <tr class="memdesc:af02e9389e1f0f14e1a0189afe3e43383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if handle references a value. <br /></td></tr>
@@ -144,9 +144,12 @@ const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ge
 <tr class="memitem:a7f4523c9228e55fc93762ca690962608"><td class="memItemLeft" align="right" valign="top"><a id="a7f4523c9228e55fc93762ca690962608"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>get_value</b> () const</td></tr>
 <tr class="separator:a7f4523c9228e55fc93762ca690962608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f7634bdaadcb148a587e31b676e0f1"><td class="memItemLeft" align="right" valign="top"><a id="a76f7634bdaadcb148a587e31b676e0f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_value</b> (double value)</td></tr>
-<tr class="separator:a76f7634bdaadcb148a587e31b676e0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400705ee7d36b6cdf3661fb30a8fa769"><td class="memItemLeft" align="right" valign="top"><a id="a400705ee7d36b6cdf3661fb30a8fa769"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_value</b> (double &amp;value) const</td></tr>
+<tr class="separator:a400705ee7d36b6cdf3661fb30a8fa769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9157e3738342fb2b12c3d5c4e6d83ed"><td class="memItemLeft" align="right" valign="top"><a id="af9157e3738342fb2b12c3d5c4e6d83ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_value</b> (double value)</td></tr>
+<tr class="separator:af9157e3738342fb2b12c3d5c4e6d83ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -165,6 +168,9 @@ HANDLE_DATATYPE&#160;</td><td class="memItemRight" valign="bottom"><b>value_</b>
 <tr class="memitem:ab089469fbdb2de53886747d18c684ddd"><td class="memItemLeft" align="right" valign="top"><a id="ab089469fbdb2de53886747d18c684ddd"></a>
 double *&#160;</td><td class="memItemRight" valign="bottom"><b>value_ptr_</b></td></tr>
 <tr class="separator:ab089469fbdb2de53886747d18c684ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6d796334b8827ad605f4df4c223beb"><td class="memItemLeft" align="right" valign="top"><a id="a5a6d796334b8827ad605f4df4c223beb"></a>
+std::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>handle_mutex_</b></td></tr>
+<tr class="separator:a5a6d796334b8827ad605f4df4c223beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A handle used to get and set a value on a given interface. </p>

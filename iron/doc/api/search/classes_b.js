@@ -10,5 +10,5 @@ var searchData=
   ['loadedhardwarecomponentnamecompleter_608',['LoadedHardwareComponentNameCompleter',['../classros2controlcli_1_1api_1_1LoadedHardwareComponentNameCompleter.html',1,'ros2controlcli::api']]],
   ['loanedcommandinterface_609',['LoanedCommandInterface',['../classhardware__interface_1_1LoanedCommandInterface.html',1,'hardware_interface']]],
   ['loanedstateinterface_610',['LoanedStateInterface',['../classhardware__interface_1_1LoanedStateInterface.html',1,'hardware_interface']]],
-  ['lowpassfilter_611',['LowPassFilter',['../classcontrol__filters_1_1LowPassFilter.html',1,'control_filters']]]
+  ['lowpassfilter_611',['LowPassFilter',['../classcontrol__filters_1_1LowPassFilter.html',1,'control_filters::LowPassFilter&lt; T &gt;'],['../classcontrol__toolbox_1_1LowPassFilter.html',1,'control_toolbox::LowPassFilter&lt; T &gt;']]]
 ];
