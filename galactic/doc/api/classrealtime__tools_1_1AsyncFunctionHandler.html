@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2c57e241daa000b5c398e65095616e3"><td class="memItemLeft" align="right" valign="top">std::thread &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#ac2c57e241daa000b5c398e65095616e3">get_thread</a> ()</td></tr>
 <tr class="memdesc:ac2c57e241daa000b5c398e65095616e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the async worker thread.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#ac2c57e241daa000b5c398e65095616e3">More...</a><br /></td></tr>
 <tr class="separator:ac2c57e241daa000b5c398e65095616e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0f08ab20a00a8dcf4017b826bb2900"><td class="memItemLeft" align="right" valign="top">const std::thread &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#a6a0f08ab20a00a8dcf4017b826bb2900">get_thread</a> () const</td></tr>
+<tr class="memdesc:a6a0f08ab20a00a8dcf4017b826bb2900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the const version of async worker thread.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#a6a0f08ab20a00a8dcf4017b826bb2900">More...</a><br /></td></tr>
+<tr class="separator:a6a0f08ab20a00a8dcf4017b826bb2900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbf1c3b006b37730a18b1831e41f6af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html#a2bbf1c3b006b37730a18b1831e41f6af">is_trigger_cycle_in_progress</a> () const</td></tr>
 <tr class="memdesc:a2bbf1c3b006b37730a18b1831e41f6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the async callback method is in progress.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#a2bbf1c3b006b37730a18b1831e41f6af">More...</a><br /></td></tr>
 <tr class="separator:a2bbf1c3b006b37730a18b1831e41f6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +197,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ac2c57e241daa000b5c398e65095616e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2c57e241daa000b5c398e65095616e3">&#9670;&nbsp;</a></span>get_thread()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c57e241daa000b5c398e65095616e3">&#9670;&nbsp;</a></span>get_thread() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,6 +222,36 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the async worker thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>The async callback thread </dd></dl>
+
+</div>
+</div>
+<a id="a6a0f08ab20a00a8dcf4017b826bb2900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0f08ab20a00a8dcf4017b826bb2900">&#9670;&nbsp;</a></span>get_thread() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::thread&amp; <a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html">realtime_tools::AsyncFunctionHandler</a>&lt; T &gt;::get_thread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the const version of async worker thread. </p>
 <dl class="section return"><dt>Returns</dt><dd>The async callback thread </dd></dl>
 
 </div>

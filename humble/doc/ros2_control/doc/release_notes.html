@@ -129,6 +129,7 @@
 <section id="controller-manager">
 <h2>controller_manager<a class="headerlink" href="#controller-manager" title="Link to this heading"></a></h2>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ros2_control_node</span></code> can now handle the sim time used by different simulators, when <code class="docutils literal notranslate"><span class="pre">use_sim_time</span></code> is set to true (<a class="reference external" href="https://github.com/ros-controls/ros2_control/pull/1810">#1810</a>).</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">ros2_control_node</span></code> node now accepts the <code class="docutils literal notranslate"><span class="pre">thread_priority</span></code> parameter to set the scheduler priority of the controller_manager’s RT thread (<a class="reference external" href="https://github.com/ros-controls/ros2_control/pull/1820">#1820</a>).</p></li>
 <li><p>Added support for the wildcard entries for the controller configuration files (<a class="reference external" href="https://github.com/ros-controls/ros2_control/pull/1724">#1724</a>).</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">ros2_control_node</span></code> node has a new <code class="docutils literal notranslate"><span class="pre">lock_memory</span></code> parameter to lock memory at startup to physical RAM in order to avoid page faults (<a class="reference external" href="https://github.com/ros-controls/ros2_control/pull/1822">#1822</a>).</p></li>

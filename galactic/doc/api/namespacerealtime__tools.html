@@ -105,12 +105,14 @@ Functions</h2></td></tr>
 <tr class="separator:ab31927b72af5e4dbe9fa40d31d9ede98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e8b5ed308b76258690bc84b6ccb003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#ab6e8b5ed308b76258690bc84b6ccb003">lock_memory</a> (std::string &amp;message)</td></tr>
 <tr class="separator:ab6e8b5ed308b76258690bc84b6ccb003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a135b868adafe2e5974ad9b6a3e32df2c"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a135b868adafe2e5974ad9b6a3e32df2c">set_thread_affinity</a> (int pid, int core)</td></tr>
-<tr class="separator:a135b868adafe2e5974ad9b6a3e32df2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae092a6b424edc74bb9b571ffe025b7c0"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#ae092a6b424edc74bb9b571ffe025b7c0">set_thread_affinity</a> (pthread_t thread, int core)</td></tr>
+<tr class="separator:ae092a6b424edc74bb9b571ffe025b7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579411dceaf2f2eade29b8c5ec92d777"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a579411dceaf2f2eade29b8c5ec92d777">set_thread_affinity</a> (std::thread &amp;thread, int core)</td></tr>
+<tr class="separator:a579411dceaf2f2eade29b8c5ec92d777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3878498c007db817e787b85444e1dcff"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a3878498c007db817e787b85444e1dcff">set_current_thread_affinity</a> (int core)</td></tr>
 <tr class="separator:a3878498c007db817e787b85444e1dcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f3be2c994caa65e5071b3536b41bc97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#a3f3be2c994caa65e5071b3536b41bc97">get_number_of_available_processors</a> ()</td></tr>
-<tr class="separator:a3f3be2c994caa65e5071b3536b41bc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6dbb8d573d0a93ab87b6c11c88c0ef5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerealtime__tools.html#ac6dbb8d573d0a93ab87b6c11c88c0ef5">get_number_of_available_processors</a> ()</td></tr>
+<tr class="separator:ac6dbb8d573d0a93ab87b6c11c88c0ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -149,14 +151,14 @@ Stuart Glaser </dd></dl>
 
 </div>
 </div>
-<a id="a3f3be2c994caa65e5071b3536b41bc97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f3be2c994caa65e5071b3536b41bc97">&#9670;&nbsp;</a></span>get_number_of_available_processors()</h2>
+<a id="ac6dbb8d573d0a93ab87b6c11c88c0ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6dbb8d573d0a93ab87b6c11c88c0ef5">&#9670;&nbsp;</a></span>get_number_of_available_processors()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int realtime_tools::get_number_of_available_processors </td>
+          <td class="memname">int64_t realtime_tools::get_number_of_available_processors </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -236,8 +238,8 @@ Stuart Glaser </dd></dl>
 
 </div>
 </div>
-<a id="a135b868adafe2e5974ad9b6a3e32df2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a135b868adafe2e5974ad9b6a3e32df2c">&#9670;&nbsp;</a></span>set_thread_affinity()</h2>
+<a id="ae092a6b424edc74bb9b571ffe025b7c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae092a6b424edc74bb9b571ffe025b7c0">&#9670;&nbsp;</a></span>set_thread_affinity() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,8 +247,8 @@ Stuart Glaser </dd></dl>
         <tr>
           <td class="memname">std::pair&lt; bool, std::string &gt; realtime_tools::set_thread_affinity </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
+          <td class="paramtype">pthread_t&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -261,10 +263,47 @@ Stuart Glaser </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Configure the caller thread affinity - Tell the scheduler to prefer a certain core for the current thread. </p><dl class="section note"><dt>Note</dt><dd>The threads created by the calling thread will inherit the affinity. </dd></dl>
+<p>Configure the caller thread affinity - Tell the scheduler to prefer a certain core for the given thread handle. </p><dl class="section note"><dt>Note</dt><dd>The threads created by the calling thread will inherit the affinity. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>the process id of the thread to set the affinity for. If 0 is passed, the affinity is set for the calling thread. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread</td><td>the thread handle of the thread </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">core</td><td>the cpu number of the core. If a negative number is passed, the affinity is reset to the default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pair of a boolean indicating whether the operation succeeded or not and a message describing the result of the operation </dd></dl>
+
+</div>
+</div>
+<a id="a579411dceaf2f2eade29b8c5ec92d777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579411dceaf2f2eade29b8c5ec92d777">&#9670;&nbsp;</a></span>set_thread_affinity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; bool, std::string &gt; realtime_tools::set_thread_affinity </td>
+          <td>(</td>
+          <td class="paramtype">std::thread &amp;&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>core</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configure the caller thread affinity - Tell the scheduler to prefer a certain core for the given thread. </p><dl class="section note"><dt>Note</dt><dd>The threads created by the calling thread will inherit the affinity. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread</td><td>the reference of the thread </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">core</td><td>the cpu number of the core. If a negative number is passed, the affinity is reset to the default. </td></tr>
   </table>
   </dd>
