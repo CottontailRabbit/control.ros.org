@@ -163,6 +163,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
+<p>Parameters are applied symmetrically for both directions, i.e., are applied to the absolute value of the corresponding quantity.</p>
+<dl class="section warning"><dt>Warning</dt><dd><ul>
+<li>Setting min_velocity: the robot can't stand still</li>
+<li>Setting min_deceleration/min_acceleration: the robot can't move with constant velocity</li>
+<li>Setting min_jerk: the robot can't move with constant acceleration</li>
+</ul>
+</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">min_velocity</td><td>Minimum velocity [m/s] or [rad/s] </td></tr>
@@ -171,8 +178,8 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max_acceleration</td><td>Maximum acceleration [m/s^2] or [rad/s^2] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">min_deceleration</td><td>Minimum deceleration [m/s^2] or [rad/s^2] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max_deceleration</td><td>Maximum deceleration [m/s^2] or [rad/s^2] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">min_jerk</td><td>Minimum jerk [m/s^3], usually &lt;= 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max_jerk</td><td>Maximum jerk [m/s^3], usually &gt;= 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min_jerk</td><td>Minimum jerk [m/s^3] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_jerk</td><td>Maximum jerk [m/s^3] </td></tr>
   </table>
   </dd>
 </dl>
