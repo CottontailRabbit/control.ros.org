@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classcontroller__interface_1_1ControllerInterfaceBase.html" title=" " alt="" coords="305,652,489,693"/>
 <area shape="rect" id="node29" href="$classhardware__interface_1_1ActuatorInterface.html" title=" " alt="" coords="323,833,471,875"/>
 <area shape="rect" id="node32" href="$classhardware__interface_1_1SensorInterface.html" title=" " alt="" coords="323,899,471,940"/>
-<area shape="rect" id="node35" href="$classhardware__interface_1_1SystemInterface.html" title=" " alt="" coords="323,1495,471,1536"/>
+<area shape="rect" id="node35" href="$classhardware__interface_1_1SystemInterface.html" title=" " alt="" coords="323,1463,471,1504"/>
 <area shape="rect" id="node3" href="$classcontroller__interface_1_1ChainableControllerInterface.html" title=" " alt="" coords="573,129,790,171"/>
 <area shape="rect" id="node11" href="$classcontroller__interface_1_1ControllerInterface.html" title=" " alt="" coords="605,652,757,693"/>
 <area shape="rect" id="node4" href="$classadmittance__controller_1_1AdmittanceController.html" title=" " alt="" coords="916,5,1085,47"/>
@@ -46,9 +46,8 @@
 <area shape="rect" id="node47" href="$classros2__control__demo__example__4_1_1RRBotSystemWithSensorHardware.html" title=" " alt="" coords="546,1659,817,1700"/>
 <area shape="rect" id="node48" href="$classros2__control__demo__example__5_1_1RRBotSystemPositionOnlyHardware.html" title=" " alt="" coords="542,1724,821,1765"/>
 <area shape="rect" id="node49" href="$classros2__control__demo__example__7_1_1RobotSystem.html" title=" " alt="" coords="576,1789,787,1831"/>
-<area shape="rect" id="node50" href="$classros2__control__demo__example__8_1_1RRBotSystemPositionOnlyHardware.html" title=" " alt="" coords="542,1855,821,1896"/>
-<area shape="rect" id="node51" href="$classros2__control__demo__example__8_1_1RRBotTransmissionsSystemPositionOnlyHardware.html" title=" " alt="" coords="542,1921,821,1977"/>
-<area shape="rect" id="node52" href="$classros2__control__demo__example__9_1_1RRBotSystemPositionOnlyHardware.html" title=" " alt="" coords="542,2001,821,2043"/>
+<area shape="rect" id="node50" href="$classros2__control__demo__example__8_1_1RRBotTransmissionsSystemPositionOnlyHardware.html" title=" " alt="" coords="542,1855,821,1911"/>
+<area shape="rect" id="node51" href="$classros2__control__demo__example__9_1_1RRBotSystemPositionOnlyHardware.html" title=" " alt="" coords="542,1936,821,1977"/>
 <area shape="rect" id="node37" href="$classgazebo__ros2__control_1_1GazeboSystem.html" title=" " alt="" coords="923,1071,1079,1112"/>
 <area shape="rect" id="node39" href="$classgz__ros2__control_1_1GazeboSimSystem.html" title=" " alt="" coords="897,1136,1104,1177"/>
 </map>
