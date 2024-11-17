@@ -116,10 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a16665dafb38ad2b5dd7824778bb2fcba"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacehardware__interface.html#af127ad1f7288042a450a4e783e44cf5c">CallbackReturn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1ActuatorInterface.html#a16665dafb38ad2b5dd7824778bb2fcba">on_init</a> (const <a class="el" href="structhardware__interface_1_1HardwareInfo.html">HardwareInfo</a> &amp;hardware_info)</td></tr>
 <tr class="memdesc:a16665dafb38ad2b5dd7824778bb2fcba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of the hardware interface from data parsed from the robot's URDF.  <a href="classhardware__interface_1_1ActuatorInterface.html#a16665dafb38ad2b5dd7824778bb2fcba">More...</a><br /></td></tr>
 <tr class="separator:a16665dafb38ad2b5dd7824778bb2fcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7deba181c05ad13591eec1b8d9d03616"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1ActuatorInterface.html#a7deba181c05ad13591eec1b8d9d03616">import_state_interface_descriptions</a> (const <a class="el" href="structhardware__interface_1_1HardwareInfo.html">HardwareInfo</a> &amp;hardware_info)</td></tr>
-<tr class="separator:a7deba181c05ad13591eec1b8d9d03616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861678b6350d903f82ff030ab08cdc84"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1ActuatorInterface.html#a861678b6350d903f82ff030ab08cdc84">import_command_interface_descriptions</a> (const <a class="el" href="structhardware__interface_1_1HardwareInfo.html">HardwareInfo</a> &amp;hardware_info)</td></tr>
-<tr class="separator:a861678b6350d903f82ff030ab08cdc84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe36348523b8aadfc95493ad906629df"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classhardware__interface_1_1StateInterface.html">StateInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1ActuatorInterface.html#afe36348523b8aadfc95493ad906629df">export_state_interfaces</a> ()</td></tr>
 <tr class="memdesc:afe36348523b8aadfc95493ad906629df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports all state interfaces for this hardware interface.  <a href="classhardware__interface_1_1ActuatorInterface.html#afe36348523b8aadfc95493ad906629df">More...</a><br /></td></tr>
 <tr class="separator:afe36348523b8aadfc95493ad906629df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,60 +522,6 @@ rclcpp_lifecycle::State&#160;</td><td class="memItemRight" valign="bottom"><b>li
 
 <p>Get name of the actuator hardware. </p>
 <dl class="section return"><dt>Returns</dt><dd>name. </dd></dl>
-
-</div>
-</div>
-<a id="a861678b6350d903f82ff030ab08cdc84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a861678b6350d903f82ff030ab08cdc84">&#9670;&nbsp;</a></span>import_command_interface_descriptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void hardware_interface::ActuatorInterface::import_command_interface_descriptions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhardware__interface_1_1HardwareInfo.html">HardwareInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>hardware_info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Import the <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> for the CommandInterfaces from the <a class="el" href="structhardware__interface_1_1HardwareInfo.html" title="This structure stores information about hardware defined in a robot&#39;s URDF.">HardwareInfo</a>. Separate them into the possible types: Joint and store them. </p>
-
-</div>
-</div>
-<a id="a7deba181c05ad13591eec1b8d9d03616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7deba181c05ad13591eec1b8d9d03616">&#9670;&nbsp;</a></span>import_state_interface_descriptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void hardware_interface::ActuatorInterface::import_state_interface_descriptions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhardware__interface_1_1HardwareInfo.html">HardwareInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>hardware_info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Import the <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> for the StateInterfaces from the <a class="el" href="structhardware__interface_1_1HardwareInfo.html" title="This structure stores information about hardware defined in a robot&#39;s URDF.">HardwareInfo</a>. Separate them into the possible types: Joint and store them. </p>
 
 </div>
 </div>

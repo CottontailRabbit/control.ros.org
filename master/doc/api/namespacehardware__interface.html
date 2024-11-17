@@ -171,8 +171,12 @@ Functions</h2></td></tr>
 <tr class="separator:a52107baf3530625362458838d940b5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4aa01c3d7e167dad5621ea325d404e"><td class="memItemLeft" align="right" valign="top">HARDWARE_INTERFACE_PUBLIC std::vector&lt; <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehardware__interface.html#a7b4aa01c3d7e167dad5621ea325d404e">parse_state_interface_descriptions</a> (const std::vector&lt; <a class="el" href="structhardware__interface_1_1ComponentInfo.html">ComponentInfo</a> &gt; &amp;component_info)</td></tr>
 <tr class="separator:a7b4aa01c3d7e167dad5621ea325d404e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2e2421f224b6242dfd667829575ebb"><td class="memItemLeft" align="right" valign="top">HARDWARE_INTERFACE_PUBLIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehardware__interface.html#adc2e2421f224b6242dfd667829575ebb">parse_state_interface_descriptions</a> (const std::vector&lt; <a class="el" href="structhardware__interface_1_1ComponentInfo.html">ComponentInfo</a> &gt; &amp;component_info, std::unordered_map&lt; std::string, <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> &gt; &amp;state_interfaces_map)</td></tr>
+<tr class="separator:adc2e2421f224b6242dfd667829575ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7109f5528d32311c5b0bee84ea92cfd8"><td class="memItemLeft" align="right" valign="top">HARDWARE_INTERFACE_PUBLIC std::vector&lt; <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehardware__interface.html#a7109f5528d32311c5b0bee84ea92cfd8">parse_command_interface_descriptions</a> (const std::vector&lt; <a class="el" href="structhardware__interface_1_1ComponentInfo.html">ComponentInfo</a> &gt; &amp;component_info)</td></tr>
 <tr class="separator:a7109f5528d32311c5b0bee84ea92cfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50094ed04113b3eb2236b8c81c528159"><td class="memItemLeft" align="right" valign="top">HARDWARE_INTERFACE_PUBLIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehardware__interface.html#a50094ed04113b3eb2236b8c81c528159">parse_command_interface_descriptions</a> (const std::vector&lt; <a class="el" href="structhardware__interface_1_1ComponentInfo.html">ComponentInfo</a> &gt; &amp;component_info, std::unordered_map&lt; std::string, <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> &gt; &amp;command_interfaces_map)</td></tr>
+<tr class="separator:a50094ed04113b3eb2236b8c81c528159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa671d478597d51c09ea3a5ebad3da68c"><td class="memItemLeft" align="right" valign="top">HARDWARE_INTERFACE_PUBLIC double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehardware__interface.html#aa671d478597d51c09ea3a5ebad3da68c">stod</a> (const std::string &amp;s)</td></tr>
 <tr class="memdesc:aa671d478597d51c09ea3a5ebad3da68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert a std::string to double in a locale-independent way.  <a href="namespacehardware__interface.html#aa671d478597d51c09ea3a5ebad3da68c">More...</a><br /></td></tr>
 <tr class="separator:aa671d478597d51c09ea3a5ebad3da68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,7 +308,7 @@ CallbackReturn::ERROR critical error has happened that should be managed in "on_
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7109f5528d32311c5b0bee84ea92cfd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7109f5528d32311c5b0bee84ea92cfd8">&#9670;&nbsp;</a></span>parse_command_interface_descriptions()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7109f5528d32311c5b0bee84ea92cfd8">&#9670;&nbsp;</a></span>parse_command_interface_descriptions() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,6 +329,41 @@ CallbackReturn::ERROR critical error has happened that should be managed in "on_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector filled with information about hardware's CommandInterfaces for the component which are exported </dd></dl>
+
+</div>
+</div>
+<a id="a50094ed04113b3eb2236b8c81c528159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50094ed04113b3eb2236b8c81c528159">&#9670;&nbsp;</a></span>parse_command_interface_descriptions() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hardware_interface::parse_command_interface_descriptions </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structhardware__interface_1_1ComponentInfo.html">ComponentInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>component_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; std::string, <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>command_interfaces_map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">component_info</td><td>information about a component (gpio, joint, sensor) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">command_interfaces_map</td><td>unordered_map filled with information about hardware's CommandInterfaces for the component which are exported </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -362,7 +401,7 @@ CallbackReturn::ERROR critical error has happened that should be managed in "on_
 </div>
 </div>
 <a id="a7b4aa01c3d7e167dad5621ea325d404e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b4aa01c3d7e167dad5621ea325d404e">&#9670;&nbsp;</a></span>parse_state_interface_descriptions()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4aa01c3d7e167dad5621ea325d404e">&#9670;&nbsp;</a></span>parse_state_interface_descriptions() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,6 +422,41 @@ CallbackReturn::ERROR critical error has happened that should be managed in "on_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector filled with information about hardware's StateInterfaces for the component which are exported </dd></dl>
+
+</div>
+</div>
+<a id="adc2e2421f224b6242dfd667829575ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2e2421f224b6242dfd667829575ebb">&#9670;&nbsp;</a></span>parse_state_interface_descriptions() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hardware_interface::parse_state_interface_descriptions </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structhardware__interface_1_1ComponentInfo.html">ComponentInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>component_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; std::string, <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">InterfaceDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>state_interfaces_map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">component_info</td><td>information about a component (gpio, joint, sensor) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">state_interfaces_map</td><td>unordered_map filled with information about hardware's StateInterfaces for the component which are exported </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
