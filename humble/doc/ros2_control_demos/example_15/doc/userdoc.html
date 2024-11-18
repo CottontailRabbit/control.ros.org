@@ -144,24 +144,6 @@
 </div>
 <section id="scenario-using-ros2-control-within-a-local-namespace">
 <h2>Scenario: Using ros2_control within a local namespace<a class="headerlink" href="#scenario-using-ros2-control-within-a-local-namespace" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p>Launch file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/launch/rrbot_namespace.launch.py">rrbot_namespace.launch.py</a></p></li>
-<li><p>Controllers yaml: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_namespace_controllers.yaml">rrbot_namespace_controllers.yaml</a></p></li>
-<li><p>URDF file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/description/urdf/rrbot.urdf.xacro">rrbot.urdf.xacro</a></p>
-<ul>
-<li><p>Description: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/ros2_control_demo_description/rrbot/urdf/rrbot_description.urdf.xacro">rrbot_description.urdf.xacro</a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> tag: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/description/ros2_control/rrbot.ros2_control.xacro">rrbot.ros2_control.xacro</a></p></li>
-</ul>
-</li>
-<li><p>RViz configuration: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/ros2_control_demo_description/rrbot/rviz/rrbot.rviz">rrbot.rviz</a></p></li>
-<li><p>Test nodes goals configuration:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_forward_position_publisher.yaml">rrbot_forward_position_publisher</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_joint_trajectory_publisher.yaml">rrbot_joint_trajectory_publisher</a></p></li>
-</ul>
-</li>
-<li><p>Hardware interface plugin: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/hardware/rrbot.cpp">rrbot.cpp</a></p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When running <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">control</span></code> CLI commands you have to use additional parameter with exact controller manager node name, i.e., <code class="docutils literal notranslate"><span class="pre">-c</span> <span class="pre">/rrbot/controller_manager</span></code>.</p>
@@ -203,29 +185,28 @@ position_trajectory_controller<span class="o">[</span>joint_trajectory_controlle
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>ros2_control_demo_example_15<span class="w"> </span>test_joint_trajectory_controller.launch.py<span class="w"> </span>publisher_config:<span class="o">=</span>rrbot_namespace_joint_trajectory_publisher.yaml
 </pre></div>
 </div>
-</section>
-<section id="scenario-using-multiple-controller-managers-on-the-same-machine">
-<h2>Scenario: Using multiple controller managers on the same machine<a class="headerlink" href="#scenario-using-multiple-controller-managers-on-the-same-machine" title="Link to this heading"></a></h2>
+<p>Files used for this demo:</p>
 <ul class="simple">
-<li><p>Launch file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/launch/multi_controller_manager_example_two_rrbots.launch.py">multi_controller_manager_example_two_rrbots.launch.py</a></p></li>
-<li><p>Controllers yaml:
-- <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/multi_controller_manager_rrbot_1_controllers.yaml">multi_controller_manager_rrbot_1_controllers.yaml</a>
-- <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/multi_controller_manager_rrbot_2_controllers.yaml">multi_controller_manager_rrbot_2_controllers.yaml</a></p></li>
-<li><p>URDF file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/description/urdf/rrbot.urdf.xacro">rrbot.urdf.xacro</a></p>
+<li><p>Launch file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/launch/rrbot_namespace.launch.py">rrbot_namespace.launch.py</a></p></li>
+<li><p>Controllers yaml: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_namespace_controllers.yaml">rrbot_namespace_controllers.yaml</a></p></li>
+<li><p>URDF file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_1/description/urdf/rrbot.urdf.xacro">rrbot.urdf.xacro</a></p>
 <ul>
 <li><p>Description: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/ros2_control_demo_description/rrbot/urdf/rrbot_description.urdf.xacro">rrbot_description.urdf.xacro</a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> tag: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/description/ros2_control/rrbot.ros2_control.xacro">rrbot.ros2_control.xacro</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> tag: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_1/description/ros2_control/rrbot.ros2_control.xacro">rrbot.ros2_control.xacro</a></p></li>
 </ul>
 </li>
 <li><p>RViz configuration: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/ros2_control_demo_description/rrbot/rviz/rrbot.rviz">rrbot.rviz</a></p></li>
 <li><p>Test nodes goals configuration:</p>
 <ul>
-<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_forward_position_publisher.yaml">rrbot_forward_position_publisher</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_joint_trajectory_publisher.yaml">rrbot_joint_trajectory_publisher</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_namespace_forward_position_publisher.yaml">rrbot_forward_position_publisher</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/rrbot_namespace_joint_trajectory_publisher.yaml">rrbot_joint_trajectory_publisher</a></p></li>
 </ul>
 </li>
-<li><p>Hardware interface plugin: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/hardware/rrbot.cpp">rrbot.cpp</a></p></li>
+<li><p>Hardware interface plugin: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_1/hardware/rrbot.cpp">rrbot.cpp</a></p></li>
 </ul>
+</section>
+<section id="scenario-using-multiple-controller-managers-on-the-same-machine">
+<h2>Scenario: Using multiple controller managers on the same machine<a class="headerlink" href="#scenario-using-multiple-controller-managers-on-the-same-machine" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When running <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">control</span></code> CLI commands you have to use additional parameter with exact controller manager node name, e.g., <code class="docutils literal notranslate"><span class="pre">-c</span> <span class="pre">/rrbot_1/controller_manager</span></code> or <code class="docutils literal notranslate"><span class="pre">-c</span> <span class="pre">/rrbot_2/controller_manager</span></code>.</p>
@@ -297,6 +278,27 @@ ros2<span class="w"> </span>control<span class="w"> </span>switch_controllers<sp
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>ros2_control_demo_example_15<span class="w"> </span>test_multi_controller_manager_joint_trajectory_controller.launch.py
 </pre></div>
 </div>
+<p>Files used for this demo:</p>
+<ul class="simple">
+<li><p>Launch file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/launch/multi_controller_manager_example_two_rrbots.launch.py">multi_controller_manager_example_two_rrbots.launch.py</a></p></li>
+<li><p>Controllers yaml:
+- <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/multi_controller_manager_rrbot_1_controllers.yaml">multi_controller_manager_rrbot_1_controllers.yaml</a>
+- <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/multi_controller_manager_rrbot_2_controllers.yaml">multi_controller_manager_rrbot_2_controllers.yaml</a></p></li>
+<li><p>URDF file: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_1/description/urdf/rrbot.urdf.xacro">rrbot.urdf.xacro</a></p>
+<ul>
+<li><p>Description: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/ros2_control_demo_description/rrbot/urdf/rrbot_description.urdf.xacro">rrbot_description.urdf.xacro</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> tag: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_1/description/ros2_control/rrbot.ros2_control.xacro">rrbot.ros2_control.xacro</a></p></li>
+</ul>
+</li>
+<li><p>RViz configuration: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/ros2_control_demo_description/rrbot/rviz/rrbot.rviz">rrbot.rviz</a></p></li>
+<li><p>Test nodes goals configuration:</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/multi_controller_manager_forward_position_publisher.yaml">rrbot_forward_position_publisher</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_15/bringup/config/multi_controller_manager_joint_trajectory_publisher.yaml">rrbot_joint_trajectory_publisher</a></p></li>
+</ul>
+</li>
+<li><p>Hardware interface plugin: <a class="reference external" href="https://github.com/ros-controls/ros2_control_demos/tree/humble/example_1/hardware/rrbot.cpp">rrbot.cpp</a></p></li>
+</ul>
 </section>
 <section id="controllers-from-this-demo">
 <h2>Controllers from this demo<a class="headerlink" href="#controllers-from-this-demo" title="Link to this heading"></a></h2>
