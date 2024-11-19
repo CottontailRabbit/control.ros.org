@@ -1,19 +1,20 @@
 <map id="controller_interface::ControllerInterface" name="controller_interface::ControllerInterface">
-<area shape="rect" id="node1" title=" " alt="" coords="537,413,689,455"/>
+<area shape="rect" id="node1" title=" " alt="" coords="537,445,689,487"/>
 <area shape="rect" id="node4" href="$classdiff__drive__controller_1_1DiffDriveController.html" title=" " alt="" coords="789,37,941,79"/>
 <area shape="rect" id="node5" href="$classforward__command__controller_1_1ForwardControllersBase.html" title="Forward command controller for a set of joints and interfaces." alt="" coords="758,103,971,144"/>
-<area shape="rect" id="node11" href="$classgripper__action__controller_1_1GripperActionController.html" title="Controller for executing a gripper command action for simple single&#45;dof grippers." alt="" coords="773,169,957,225"/>
-<area shape="rect" id="node12" href="$classimu__sensor__broadcaster_1_1IMUSensorBroadcaster.html" title=" " alt="" coords="774,249,955,291"/>
-<area shape="rect" id="node13" href="$classjoint__state__broadcaster_1_1JointStateBroadcaster.html" title="Joint State Broadcaster for all or some state in a ros2_control system." alt="" coords="777,315,952,356"/>
-<area shape="rect" id="node14" href="$classjoint__trajectory__controller_1_1JointTrajectoryController.html" title=" " alt="" coords="769,380,960,421"/>
-<area shape="rect" id="node15" href="$classparallel__gripper__action__controller_1_1GripperActionController.html" title="Controller for executing a ParallelGripperCommand action." alt="" coords="739,445,991,487"/>
-<area shape="rect" id="node16" href="$classpose__broadcaster_1_1PoseBroadcaster.html" title=" " alt="" coords="737,511,992,538"/>
-<area shape="rect" id="node17" href="$classrange__sensor__broadcaster_1_1RangeSensorBroadcaster.html" title=" " alt="" coords="768,563,961,604"/>
-<area shape="rect" id="node18" href="$classros2__control__demo__example__10_1_1GPIOController.html" title=" " alt="" coords="759,628,970,669"/>
-<area shape="rect" id="node19" href="$classros2__control__demo__example__7_1_1RobotController.html" title=" " alt="" coords="759,693,970,735"/>
-<area shape="rect" id="node20" href="$classtricycle__controller_1_1TricycleController.html" title=" " alt="" coords="793,759,936,800"/>
-<area shape="rect" id="node2" href="$classcontroller__interface_1_1ControllerInterfaceBase.html" title=" " alt="" coords="305,413,489,455"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,413,257,455"/>
+<area shape="rect" id="node11" href="$classgpio__controllers_1_1GpioCommandController.html" title=" " alt="" coords="749,168,980,209"/>
+<area shape="rect" id="node12" href="$classgripper__action__controller_1_1GripperActionController.html" title="Controller for executing a gripper command action for simple single&#45;dof grippers." alt="" coords="773,234,957,290"/>
+<area shape="rect" id="node13" href="$classimu__sensor__broadcaster_1_1IMUSensorBroadcaster.html" title=" " alt="" coords="774,315,955,356"/>
+<area shape="rect" id="node14" href="$classjoint__state__broadcaster_1_1JointStateBroadcaster.html" title="Joint State Broadcaster for all or some state in a ros2_control system." alt="" coords="777,380,952,421"/>
+<area shape="rect" id="node15" href="$classjoint__trajectory__controller_1_1JointTrajectoryController.html" title=" " alt="" coords="769,445,960,487"/>
+<area shape="rect" id="node16" href="$classparallel__gripper__action__controller_1_1GripperActionController.html" title="Controller for executing a ParallelGripperCommand action." alt="" coords="739,511,991,552"/>
+<area shape="rect" id="node17" href="$classpose__broadcaster_1_1PoseBroadcaster.html" title=" " alt="" coords="737,577,992,603"/>
+<area shape="rect" id="node18" href="$classrange__sensor__broadcaster_1_1RangeSensorBroadcaster.html" title=" " alt="" coords="768,628,961,669"/>
+<area shape="rect" id="node19" href="$classros2__control__demo__example__10_1_1GPIOController.html" title=" " alt="" coords="759,693,970,735"/>
+<area shape="rect" id="node20" href="$classros2__control__demo__example__7_1_1RobotController.html" title=" " alt="" coords="759,759,970,800"/>
+<area shape="rect" id="node21" href="$classtricycle__controller_1_1TricycleController.html" title=" " alt="" coords="793,824,936,865"/>
+<area shape="rect" id="node2" href="$classcontroller__interface_1_1ControllerInterfaceBase.html" title=" " alt="" coords="305,445,489,487"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,445,257,487"/>
 <area shape="rect" id="node6" href="$classforward__command__controller_1_1ForwardCommandController.html" title="Forward command controller for a set of joints." alt="" coords="1085,71,1299,112"/>
 <area shape="rect" id="node10" href="$classforward__command__controller_1_1MultiInterfaceForwardCommandController.html" title="Multi interface forward command controller for a set of interfaces." alt="" coords="1040,136,1344,177"/>
 <area shape="rect" id="node7" href="$classeffort__controllers_1_1JointGroupEffortController.html" title="Forward command controller for a set of effort controlled joints (linear or angular)." alt="" coords="1401,5,1598,47"/>

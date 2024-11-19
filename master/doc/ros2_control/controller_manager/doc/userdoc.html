@@ -281,9 +281,9 @@ It is recommended to test the fallback strategy in simulation before deploying i
 <section id="spawner">
 <h3><code class="docutils literal notranslate"><span class="pre">spawner</span></code><a class="headerlink" href="#spawner" title="Link to this heading"></a></h3>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ros2<span class="w"> </span>run<span class="w"> </span>controller_manager<span class="w"> </span>spawner<span class="w"> </span>-h
-<span class="go">usage: spawner [-h] [-c CONTROLLER_MANAGER] [-p PARAM_FILE] [-n NAMESPACE] [--load-only] [--inactive] [-t CONTROLLER_TYPE] [-u]</span>
-<span class="go">                  [--controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT]</span>
-<span class="go">                  controller_name</span>
+<span class="go">usage: spawner [-h] [-c CONTROLLER_MANAGER] [-p PARAM_FILE] [-n NAMESPACE] [--load-only] [--inactive] [-u] [--controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT]</span>
+<span class="go">              [--switch-timeout SWITCH_TIMEOUT] [--activate-as-group]</span>
+<span class="go">              controller_names [controller_names ...]</span>
 
 <span class="go">positional arguments:</span>
 <span class="go">  controller_names      List of controllers</span>
@@ -301,10 +301,10 @@ It is recommended to test the fallback strategy in simulation before deploying i
 <span class="go">  -u, --unload-on-kill  Wait until this application is interrupted and unload controller</span>
 <span class="go">  --controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT</span>
 <span class="go">                        Time to wait for the controller manager</span>
+<span class="go">  --switch-timeout SWITCH_TIMEOUT</span>
+<span class="go">                        Time to wait for a successful state switch of controllers. Useful if controllers cannot be switched immediately, e.g., paused</span>
+<span class="go">                        simulations at startup</span>
 <span class="go">  --activate-as-group   Activates all the parsed controllers list together instead of one by one. Useful for activating all chainable controllers altogether</span>
-<span class="go">  --fallback_controllers FALLBACK_CONTROLLERS [FALLBACK_CONTROLLERS ...]</span>
-<span class="go">                        Fallback controllers list are activated as a fallback strategy when the spawned controllers fail. When the argument is provided, it takes precedence over the fallback_controllers list in the</span>
-<span class="go">                        param file</span>
 </pre></div>
 </div>
 <p>The parsed controller config file can follow the same conventions as the typical ROS 2 parameter file format. Now, the spawner can handle config files with wildcard entries and also the controller name in the absolute namespace. See the following examples on the config files:</p>
@@ -362,15 +362,18 @@ It is recommended to test the fallback strategy in simulation before deploying i
 <section id="unspawner">
 <h3><code class="docutils literal notranslate"><span class="pre">unspawner</span></code><a class="headerlink" href="#unspawner" title="Link to this heading"></a></h3>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ros2<span class="w"> </span>run<span class="w"> </span>controller_manager<span class="w"> </span>unspawner<span class="w"> </span>-h
-<span class="go">usage: unspawner [-h] [-c CONTROLLER_MANAGER] controller_name</span>
+<span class="go">usage: unspawner [-h] [-c CONTROLLER_MANAGER] [--switch-timeout SWITCH_TIMEOUT] controller_names [controller_names ...]</span>
 
 <span class="go">positional arguments:</span>
-<span class="go">  controller_name       Name of the controller</span>
+<span class="go">  controller_names      Name of the controller</span>
 
-<span class="go">optional arguments:</span>
+<span class="go">options:</span>
 <span class="go">  -h, --help            show this help message and exit</span>
 <span class="go">  -c CONTROLLER_MANAGER, --controller-manager CONTROLLER_MANAGER</span>
 <span class="go">                        Name of the controller manager ROS node</span>
+<span class="go">  --switch-timeout SWITCH_TIMEOUT</span>
+<span class="go">                        Time to wait for a successful state switch of controllers. Useful if controllers cannot be switched immediately, e.g., paused</span>
+<span class="go">                        simulations at startup</span>
 </pre></div>
 </div>
 </section>
