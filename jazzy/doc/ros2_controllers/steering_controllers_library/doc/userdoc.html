@@ -28,7 +28,7 @@
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="bicycle_steering_controller" href="../../bicycle_steering_controller/doc/userdoc.html" />
-    <link rel="prev" title="diff_drive_controller" href="../../diff_drive_controller/doc/userdoc.html" /> 
+    <link rel="prev" title="mecanum_drive_controller" href="../../mecanum_drive_controller/doc/userdoc.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,6 +59,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../doc/controllers_index.html#guidelines-and-best-practices">Guidelines and Best Practices</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../doc/controllers_index.html#controllers-for-wheeled-mobile-robots">Controllers for Wheeled Mobile Robots</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../../diff_drive_controller/doc/userdoc.html">Differential Drive Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../mecanum_drive_controller/doc/userdoc.html">Mecanum Drive Controllers</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Steering Controllers Library</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#execution-logic-of-the-controller">Execution logic of the controller</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#currently-implemented-kinematics">Currently implemented kinematics</a><ul>
@@ -126,19 +127,10 @@
            <div itemprop="articleBody">
              
 
-<p>
-  <strong>
-    
-    You're reading the documentation for a development version.
-    For the latest released version, please have a look at <a href="../../../../../iron/doc/ros2_controllers/steering_controllers_library/doc/userdoc.html">Iron</a>.
-    
-  </strong>
-</p>
-
 
   <section id="steering-controllers-library">
 <span id="steering-controllers-library-userdoc"></span><h1>steering_controllers_library<a class="headerlink" href="#steering-controllers-library" title="Link to this heading"></a></h1>
-<p>Library with shared functionalities for mobile robot controllers with steering drives, with so-called non-holonomic constraints.</p>
+<p>Library with shared functionalities for mobile robot controllers with steering drives (2 degrees of freedom), with so-called non-holonomic constraints.</p>
 <p>The library implements generic odometry and update methods and defines the main interfaces.</p>
 <p>The update methods only use inverse kinematics, it does not implement any feedback control loops like path-tracking controllers etc.</p>
 <p>For an introduction to mobile robot kinematics and the nomenclature used here, see <a class="reference internal" href="../../doc/mobile_robot_kinematics.html#mobile-robot-kinematics"><span class="std std-ref">Wheeled Mobile Robot Kinematics</span></a>.</p>
@@ -312,7 +304,7 @@ Other relevant features are:</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../diff_drive_controller/doc/userdoc.html" class="btn btn-neutral float-left" title="diff_drive_controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../mecanum_drive_controller/doc/userdoc.html" class="btn btn-neutral float-left" title="mecanum_drive_controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../../bicycle_steering_controller/doc/userdoc.html" class="btn btn-neutral float-right" title="bicycle_steering_controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -342,7 +334,8 @@ Other relevant features are:</p>
   <div class="rst-other-versions">
     <dl>
       <dt>Releases</dt>
-        <dd><a href="../../../../../iron/doc/ros2_controllers/steering_controllers_library/doc/userdoc.html">Iron (latest)</a></dd><br>
+        <dd><a href="../../../../../iron/doc/ros2_controllers/steering_controllers_library/doc/userdoc.html">Iron (EOL)</a></dd><br>
+        
         <dd><a href="../../../../../humble/doc/ros2_controllers/steering_controllers_library/doc/userdoc.html">Humble</a></dd><br>
         <dd><a href="../../../../../galactic/index.html">Galactic (EOL)</a></dd><br>
         
