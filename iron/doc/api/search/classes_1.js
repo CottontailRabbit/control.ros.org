@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bcolors_530',['bcolors',['../classcontroller__manager_1_1controller__manager__services_1_1bcolors.html',1,'controller_manager::controller_manager_services']]],
-  ['bicyclesteeringcontroller_531',['BicycleSteeringController',['../classbicycle__steering__controller_1_1BicycleSteeringController.html',1,'bicycle_steering_controller']]]
+  ['bcolors_534',['bcolors',['../classcontroller__manager_1_1controller__manager__services_1_1bcolors.html',1,'controller_manager::controller_manager_services']]],
+  ['bicyclesteeringcontroller_535',['BicycleSteeringController',['../classbicycle__steering__controller_1_1BicycleSteeringController.html',1,'bicycle_steering_controller']]]
 ];
