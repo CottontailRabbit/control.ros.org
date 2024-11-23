@@ -94,8 +94,8 @@ JOINT_TRAJECTORY_CONTROLLER_PUBLIC&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:ab1cb95a6b9be80fa382ab03019642bb1"><td class="memItemLeft" align="right" valign="top"><a id="ab1cb95a6b9be80fa382ab03019642bb1"></a>
 JOINT_TRAJECTORY_CONTROLLER_PUBLIC void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (std::shared_ptr&lt; trajectory_msgs::msg::JointTrajectory &gt; joint_trajectory)</td></tr>
 <tr class="separator:ab1cb95a6b9be80fa382ab03019642bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba1b1bd329a0d1fe576fa1667561331"><td class="memItemLeft" align="right" valign="top">JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#aaba1b1bd329a0d1fe576fa1667561331">sample</a> (const rclcpp::Time &amp;sample_time, const interpolation_methods::InterpolationMethod interpolation_method, trajectory_msgs::msg::JointTrajectoryPoint &amp;output_state, TrajectoryPointConstIter &amp;start_segment_itr, TrajectoryPointConstIter &amp;end_segment_itr)</td></tr>
-<tr class="separator:aaba1b1bd329a0d1fe576fa1667561331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0716b15504a759d89a1b49a8cd70d75"><td class="memItemLeft" align="right" valign="top">JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#aa0716b15504a759d89a1b49a8cd70d75">sample</a> (const rclcpp::Time &amp;sample_time, const interpolation_methods::InterpolationMethod interpolation_method, trajectory_msgs::msg::JointTrajectoryPoint &amp;output_state, TrajectoryPointConstIter &amp;start_segment_itr, TrajectoryPointConstIter &amp;end_segment_itr, const bool search_monotonically_increasing=true)</td></tr>
+<tr class="separator:aa0716b15504a759d89a1b49a8cd70d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3477e64e79982032b7b60d503a541040"><td class="memItemLeft" align="right" valign="top">JOINT_TRAJECTORY_CONTROLLER_PUBLIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#a3477e64e79982032b7b60d503a541040">interpolate_between_points</a> (const rclcpp::Time &amp;time_a, const trajectory_msgs::msg::JointTrajectoryPoint &amp;state_a, const rclcpp::Time &amp;time_b, const trajectory_msgs::msg::JointTrajectoryPoint &amp;state_b, const rclcpp::Time &amp;sample_time, trajectory_msgs::msg::JointTrajectoryPoint &amp;output)</td></tr>
 <tr class="separator:a3477e64e79982032b7b60d503a541040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d679f9d8c0a4b0e8050f2b2fdab20a"><td class="memItemLeft" align="right" valign="top"><a id="a66d679f9d8c0a4b0e8050f2b2fdab20a"></a>
@@ -120,7 +120,7 @@ JOINT_TRAJECTORY_CONTROLLER_PUBLIC std::shared_ptr&lt; trajectory_msgs::msg::Joi
 JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_sampled_already</b> () const</td></tr>
 <tr class="separator:af54a6baed3a5a5dd045c36d02873a221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7eac22dc077207604976a5a78f497f"><td class="memItemLeft" align="right" valign="top">JOINT_TRAJECTORY_CONTROLLER_PUBLIC size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#a3a7eac22dc077207604976a5a78f497f">last_sample_index</a> () const</td></tr>
-<tr class="memdesc:a3a7eac22dc077207604976a5a78f497f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the segment start returned by the last <code><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#aaba1b1bd329a0d1fe576fa1667561331">sample()</a></code> operation.  <a href="classjoint__trajectory__controller_1_1Trajectory.html#a3a7eac22dc077207604976a5a78f497f">More...</a><br /></td></tr>
+<tr class="memdesc:a3a7eac22dc077207604976a5a78f497f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the segment start returned by the last <code><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#aa0716b15504a759d89a1b49a8cd70d75">sample()</a></code> operation.  <a href="classjoint__trajectory__controller_1_1Trajectory.html#a3a7eac22dc077207604976a5a78f497f">More...</a><br /></td></tr>
 <tr class="separator:a3a7eac22dc077207604976a5a78f497f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -217,13 +217,13 @@ JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valig
 </table>
 </div><div class="memdoc">
 
-<p>Get the index of the segment start returned by the last <code><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#aaba1b1bd329a0d1fe576fa1667561331">sample()</a></code> operation. </p>
+<p>Get the index of the segment start returned by the last <code><a class="el" href="classjoint__trajectory__controller_1_1Trajectory.html#aa0716b15504a759d89a1b49a8cd70d75">sample()</a></code> operation. </p>
 <p>As the trajectory is only accessed at monotonically increasing sampling times, this index is used to speed up the selection of relevant trajectory points. </p>
 
 </div>
 </div>
-<a id="aaba1b1bd329a0d1fe576fa1667561331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaba1b1bd329a0d1fe576fa1667561331">&#9670;&nbsp;</a></span>sample()</h2>
+<a id="aa0716b15504a759d89a1b49a8cd70d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0716b15504a759d89a1b49a8cd70d75">&#9670;&nbsp;</a></span>sample()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,13 @@ JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valig
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TrajectoryPointConstIter &amp;&#160;</td>
-          <td class="paramname"><em>end_segment_itr</em>&#160;</td>
+          <td class="paramname"><em>end_segment_itr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>search_monotonically_increasing</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -266,7 +272,7 @@ JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>Find the segment (made up of 2 points) and its expected state from the containing trajectory. Sampling trajectory at given <code>sample_time</code>. If position in the <code>end_segment_itr</code> is missing it will be deduced from provided velocity, or acceleration respectively. Deduction assumes that the provided velocity or acceleration have to be reached at the time defined in the segment.</p>
-<p>This function assumes that sampling is only done at monotonically increasing <code>sample_time</code> for any trajectory.</p>
+<p>This function by default assumes that sampling is only done at monotonically increasing <code>sample_time</code> for any trajectory. That means, it will only search for a point matching the sample time after the point it has been called before. If this isn't desired, set <code>search_monotonically_increasing</code> to false.</p>
 <p>Specific case returns for start_segment_itr and end_segment_itr:</p><ul>
 <li>Sampling before the trajectory start: start_segment_itr = begin(), end_segment_itr = begin()</li>
 <li>Sampling exactly on a point of the trajectory: start_segment_itr = iterator where point is, end_segment_itr = iterator after start_segment_itr</li>
@@ -281,6 +287,7 @@ JOINT_TRAJECTORY_CONTROLLER_PUBLIC bool&#160;</td><td class="memItemRight" valig
     <tr><td class="paramdir">[out]</td><td class="paramname">output_state</td><td>Calculated new at <code>sample_time</code>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">start_segment_itr</td><td>Iterator to the start segment for given <code>sample_time</code>. See description above. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">end_segment_itr</td><td>Iterator to the end segment for given <code>sample_time</code>. See description above. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">search_monotonically_increasing</td><td>If set to true, the next sample call will start searching in the trajectory at the index of this call's result. </td></tr>
   </table>
   </dd>
 </dl>
