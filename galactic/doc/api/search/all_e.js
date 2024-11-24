@@ -6,8 +6,8 @@ var searchData=
   ['onimu_229',['OnIMU',['../classImuData.html#a5a88041a14bcff887c9ab5a1e13189c5',1,'ImuData']]],
   ['open_5floop_5fcontrol_5f_230',['open_loop_control_',['../classjoint__trajectory__controller_1_1JointTrajectoryController.html#aa46e91692d3345efc3b520bfe2783c36',1,'joint_trajectory_controller::JointTrajectoryController']]],
   ['operator_20bool_231',['operator bool',['../classhardware__interface_1_1ReadOnlyHandle.html#a964b07a6a0f5b2414e070e5a8a1f746e',1,'hardware_interface::ReadOnlyHandle']]],
-  ['operator_20t_232',['operator T',['../classrealtime__tools_1_1RealtimeBoxBestEffort.html#a401ae84b4f316e1442e5da25dc15bb71',1,'realtime_tools::RealtimeBoxBestEffort']]],
-  ['operator_3d_233',['operator=',['../classcontrol__toolbox_1_1Pid.html#aceaf28e1f2566aa4fb3322bf36362431',1,'control_toolbox::Pid::operator=()'],['../classrealtime__tools_1_1RealtimeBoxBestEffort.html#ada5478d9eb5bc5ef5b25542321bbfdb0',1,'realtime_tools::RealtimeBoxBestEffort::operator=()'],['../classrealtime__tools_1_1RealtimeBuffer.html#ae22fe42ee2c675a1658689775ea8bc98',1,'realtime_tools::RealtimeBuffer::operator=()']]],
-  ['optional_3c_20t_20_3e_234',['optional&lt; T &gt;',['../classrealtime__tools_1_1RealtimeBoxBestEffort.html#ac0d178f96678a7b9b886b62ab8699be3',1,'realtime_tools::RealtimeBoxBestEffort']]],
+  ['operator_20t_232',['operator T',['../classrealtime__tools_1_1RealtimeBoxBase.html#a6c46dbc1347390c5eb1f0a00d125443f',1,'realtime_tools::RealtimeBoxBase']]],
+  ['operator_3d_233',['operator=',['../classcontrol__toolbox_1_1Pid.html#aceaf28e1f2566aa4fb3322bf36362431',1,'control_toolbox::Pid::operator=()'],['../classrealtime__tools_1_1RealtimeBoxBase.html#a5ba5ff39ebe3be89edc41692b6bffda1',1,'realtime_tools::RealtimeBoxBase::operator=()'],['../classrealtime__tools_1_1RealtimeBuffer.html#ae22fe42ee2c675a1658689775ea8bc98',1,'realtime_tools::RealtimeBuffer::operator=()']]],
+  ['optional_3c_20t_20_3e_234',['optional&lt; T &gt;',['../classrealtime__tools_1_1RealtimeBoxBase.html#ae2ca91e915f3ebc43eb8f691f33293ac',1,'realtime_tools::RealtimeBoxBase']]],
   ['other_5fcommands_5f_235',['other_commands_',['../classfake__components_1_1GenericSystem.html#a201c1bb8917c5425b2ec95985ddb9d2d',1,'fake_components::GenericSystem']]]
 ];

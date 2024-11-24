@@ -84,9 +84,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html">AsyncFunctionHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to handle asynchronous function calls. <a class="el" href="classrealtime__tools_1_1AsyncFunctionHandler.html" title="Class to handle asynchronous function calls. AsyncFunctionHandler is a class that allows the user to ...">AsyncFunctionHandler</a> is a class that allows the user to have a asynchronous call to the parsed method and be able to set some thread specific parameters.  <a href="classrealtime__tools_1_1AsyncFunctionHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1RealtimeBox.html">RealtimeBox</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1RealtimeBoxBestEffort.html">RealtimeBoxBestEffort</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">RealtimeBoxBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrealtime__tools_1_1RealtimeBuffer.html">RealtimeBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +97,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ad2e880836cb816fb13489a90358fe917"><td class="memTemplParams" colspan="2"><a id="ad2e880836cb816fb13489a90358fe917"></a>
+template&lt;typename T , typename mutex_type  = std::mutex&gt; </td></tr>
+<tr class="memitem:ad2e880836cb816fb13489a90358fe917"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RealtimeBoxBestEffort</b> = <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">RealtimeBoxBase</a>&lt; T, mutex_type &gt;</td></tr>
+<tr class="separator:ad2e880836cb816fb13489a90358fe917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d3255249d21479d2b42315bae183d5"><td class="memTemplParams" colspan="2"><a id="aa1d3255249d21479d2b42315bae183d5"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa1d3255249d21479d2b42315bae183d5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RealtimeBoxStandard</b> = <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">RealtimeBoxBase</a>&lt; T, std::mutex &gt;</td></tr>
+<tr class="separator:aa1d3255249d21479d2b42315bae183d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2796f251bcf2a1217638e2173ff04052"><td class="memTemplParams" colspan="2"><a id="a2796f251bcf2a1217638e2173ff04052"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2796f251bcf2a1217638e2173ff04052"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RealtimeBoxRecursive</b> = <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">RealtimeBoxBase</a>&lt; T, std::recursive_mutex &gt;</td></tr>
+<tr class="separator:a2796f251bcf2a1217638e2173ff04052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60aaf6f236d62fef85f3fd6bf63b488f"><td class="memTemplParams" colspan="2"><a id="a60aaf6f236d62fef85f3fd6bf63b488f"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a60aaf6f236d62fef85f3fd6bf63b488f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RealtimeBox</b> = <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">RealtimeBoxStandard</a>&lt; T &gt;</td></tr>
+<tr class="separator:a60aaf6f236d62fef85f3fd6bf63b488f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6e3aeb6d651c4b42b32e9ee6765350"><td class="memTemplParams" colspan="2"><a id="a2c6e3aeb6d651c4b42b32e9ee6765350"></a>
 template&lt;class Msg &gt; </td></tr>
 <tr class="memitem:a2c6e3aeb6d651c4b42b32e9ee6765350"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RealtimePublisherSharedPtr</b> = std::shared_ptr&lt; <a class="el" href="classrealtime__tools_1_1RealtimePublisher.html">RealtimePublisher</a>&lt; Msg &gt; &gt;</td></tr>
