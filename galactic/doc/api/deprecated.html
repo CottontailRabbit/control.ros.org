@@ -67,8 +67,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#aa2774f47c1f3628ce59cc25a2c9fd788">realtime_tools::RealtimeBoxBase&lt; T, mutex_type &gt;::get</a>  (T &amp;in) const</dt>
+<dd><a class="anchor" id="_deprecated000006"></a>Use <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#a02e6c3da24f2b36382a3ef733358941c" title="Wait until the mutex could be locked and access the content (r)">get(const std::function&lt;void(const T &amp;)&gt; &amp; func)</a> instead!  </dd>
+<dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#add61c02e15e1cb6440dbfa14d71110c8">realtime_tools::RealtimeBoxBase&lt; T, mutex_type &gt;::set</a>  (const T &amp;value)</dt>
+<dd><a class="anchor" id="_deprecated000005"></a>Use <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#a3d3e588f0513bc2e0ad3a2fb676a0fb0" title="wait until the mutex could be locked and access the content (rw)">set(const std::function&lt;void(T &amp;)&gt; &amp; func)</a> instead!  </dd>
+<dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#a1cd563dd306ef571ec72b91f3062d4b8">realtime_tools::RealtimeBoxBase&lt; T, mutex_type &gt;::tryGet</a>  () const</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>Use <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#abd44fe3fa46fd1d8dc24021bafd5cd0f" title="get the content with best effort">try_get()</a> instead!  </dd>
+<dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#a3fd7896986785b5eee8085efd31da906">realtime_tools::RealtimeBoxBase&lt; T, mutex_type &gt;::tryGet</a>  (const std::function&lt; void(const T &amp;)&gt; &amp;func)</dt>
+<dd><a class="anchor" id="_deprecated000004"></a>Use <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#aa0ce875ab52d5ea15a86b05988f34ae5" title="access the content (r) with best effort">try_get(const std::function&lt;void(const T &amp;)&gt; &amp; func)</a> instead!  </dd>
+<dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#a1b793329439eb8a69ee309b3aaae7e28">realtime_tools::RealtimeBoxBase&lt; T, mutex_type &gt;::trySet</a>  (const T &amp;value)</dt>
+<dd><a class="anchor" id="_deprecated000001"></a>Use <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#aa5d663aec523f001b7cb10ce207e228d" title="set a new content with best effort">try_set(const T &amp; value)</a> instead!  </dd>
+<dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#ac0a444ebf9a93e8c59a8ab5580c5778b">realtime_tools::RealtimeBoxBase&lt; T, mutex_type &gt;::trySet</a>  (const std::function&lt; void(T &amp;)&gt; &amp;func)</dt>
+<dd><a class="anchor" id="_deprecated000002"></a>Use <a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html#a493d88bd174aa7cc595cb3481f815a2c" title="access the content readable with best effort">try_set(const std::function&lt;void(T &amp;)&gt; &amp; func)</a> instead!  </dd>
 <dt>Member <a class="el" href="classrealtime__tools_1_1RealtimeClock.html#a47fc1c946dc4a81e70c22c1b0ac24834">realtime_tools::RealtimeClock::getSystemTime</a>  (const rclcpp::Time &amp;realtime_time=rclcpp::Time())</dt>
-<dd><a class="anchor" id="_deprecated000001"></a>use <a class="el" href="classrealtime__tools_1_1RealtimeClock.html#ac4d4a79dea6f0c3437b781c13a289185">now()</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classrealtime__tools_1_1RealtimeClock.html#ac4d4a79dea6f0c3437b781c13a289185">now()</a> instead. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
