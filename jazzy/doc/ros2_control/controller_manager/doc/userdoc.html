@@ -273,7 +273,7 @@ It is recommended to test the fallback strategy in simulation before deploying i
 <h3><code class="docutils literal notranslate"><span class="pre">spawner</span></code><a class="headerlink" href="#spawner" title="Link to this heading"></a></h3>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ros2<span class="w"> </span>run<span class="w"> </span>controller_manager<span class="w"> </span>spawner<span class="w"> </span>-h
 <span class="go">usage: spawner [-h] [-c CONTROLLER_MANAGER] [-p PARAM_FILE] [-n NAMESPACE] [--load-only] [--inactive] [-u] [--controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT]</span>
-<span class="go">              [--switch-timeout SWITCH_TIMEOUT] [--activate-as-group]</span>
+<span class="go">              [--switch-timeout SWITCH_TIMEOUT] [--activate-as-group] [--service-call-timeout SERVICE_CALL_TIMEOUT]</span>
 <span class="go">              controller_names [controller_names ...]</span>
 
 <span class="go">positional arguments:</span>
@@ -291,7 +291,9 @@ It is recommended to test the fallback strategy in simulation before deploying i
 <span class="go">  --inactive            Load and configure the controller, however do not activate them</span>
 <span class="go">  -u, --unload-on-kill  Wait until this application is interrupted and unload controller</span>
 <span class="go">  --controller-manager-timeout CONTROLLER_MANAGER_TIMEOUT</span>
-<span class="go">                        Time to wait for the controller manager</span>
+<span class="go">                        Time to wait for the controller manager service to be available</span>
+<span class="go">  --service-call-timeout SERVICE_CALL_TIMEOUT</span>
+<span class="go">                        Time to wait for the service response from the controller manager</span>
 <span class="go">  --switch-timeout SWITCH_TIMEOUT</span>
 <span class="go">                        Time to wait for a successful state switch of controllers. Useful if controllers cannot be switched immediately, e.g., paused</span>
 <span class="go">                        simulations at startup</span>
