@@ -135,15 +135,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adcde86d62a3643d198abf785f3c48cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1694f17315921fc0e4ee5f347a99730b"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">hardware_interface::InterfaceDescription</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#a1694f17315921fc0e4ee5f347a99730b">export_unlisted_state_interface_descriptions</a> ()</td></tr>
 <tr class="separator:a1694f17315921fc0e4ee5f347a99730b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd6274c3d0e2fe1fc7d7c812a6f6cc6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; StateInterface::ConstSharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#afbd6274c3d0e2fe1fc7d7c812a6f6cc6">on_export_state_interfaces</a> ()</td></tr>
-<tr class="separator:afbd6274c3d0e2fe1fc7d7c812a6f6cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada59268806548721d8071bdd32679d6b"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; StateInterface::ConstSharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#ada59268806548721d8071bdd32679d6b">on_export_state_interfaces</a> ()</td></tr>
+<tr class="separator:ada59268806548721d8071bdd32679d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189df71549081ceac0f66638ef4790cc"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classhardware__interface_1_1CommandInterface.html">CommandInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#a189df71549081ceac0f66638ef4790cc">export_command_interfaces</a> ()</td></tr>
 <tr class="memdesc:a189df71549081ceac0f66638ef4790cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports all command interfaces for this hardware interface.  <a href="classhardware__interface_1_1SystemInterface.html#a189df71549081ceac0f66638ef4790cc">More...</a><br /></td></tr>
 <tr class="separator:a189df71549081ceac0f66638ef4790cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec956ab243f41ddb555cce5b9f06b770"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="structhardware__interface_1_1InterfaceDescription.html">hardware_interface::InterfaceDescription</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#aec956ab243f41ddb555cce5b9f06b770">export_unlisted_command_interface_descriptions</a> ()</td></tr>
 <tr class="separator:aec956ab243f41ddb555cce5b9f06b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6edf539d85f05be8c70a9a138f51ace3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; CommandInterface::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#a6edf539d85f05be8c70a9a138f51ace3">on_export_command_interfaces</a> ()</td></tr>
-<tr class="separator:a6edf539d85f05be8c70a9a138f51ace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edc6b6ae4adb6150780ad709d0572e1"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; CommandInterface::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#a1edc6b6ae4adb6150780ad709d0572e1">on_export_command_interfaces</a> ()</td></tr>
+<tr class="separator:a1edc6b6ae4adb6150780ad709d0572e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b944943314be907806ec3e989e6acd9"><td class="memItemLeft" align="right" valign="top">virtual return_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhardware__interface_1_1SystemInterface.html#a9b944943314be907806ec3e989e6acd9">prepare_command_mode_switch</a> (const std::vector&lt; std::string &gt; &amp;, const std::vector&lt; std::string &gt; &amp;)</td></tr>
 <tr class="memdesc:a9b944943314be907806ec3e989e6acd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for a new command interface switch.  <a href="classhardware__interface_1_1SystemInterface.html#a9b944943314be907806ec3e989e6acd9">More...</a><br /></td></tr>
 <tr class="separator:a9b944943314be907806ec3e989e6acd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +295,7 @@ std::vector&lt; CommandInterface::SharedPtr &gt;&#160;</td><td class="memItemRig
 </div><div class="memdoc">
 
 <p>Exports all command interfaces for this hardware interface. </p>
-<p>Old way of exporting the CommandInterfaces. If a empty vector is returned then the <a class="el" href="classhardware__interface_1_1SystemInterface.html#a6edf539d85f05be8c70a9a138f51ace3">on_export_command_interfaces()</a> method is called. If a vector with CommandInterfaces is returned then the exporting of the CommandInterfaces is only done with this function and the ownership is transferred to the resource manager. The set_command(...), get_command(...), ..., can then not be used.</p>
+<p>Old way of exporting the CommandInterfaces. If a empty vector is returned then the <a class="el" href="classhardware__interface_1_1SystemInterface.html#a1edc6b6ae4adb6150780ad709d0572e1">on_export_command_interfaces()</a> method is called. If a vector with CommandInterfaces is returned then the exporting of the CommandInterfaces is only done with this function and the ownership is transferred to the resource manager. The set_command(...), get_command(...), ..., can then not be used.</p>
 <p>Note the ownership over the state interfaces is transferred to the caller.</p>
 <dl class="section return"><dt>Returns</dt><dd>vector of state interfaces </dd></dl>
 
@@ -327,7 +327,7 @@ std::vector&lt; CommandInterface::SharedPtr &gt;&#160;</td><td class="memItemRig
 </div><div class="memdoc">
 
 <p>Exports all state interfaces for this hardware interface. </p>
-<p>Old way of exporting the StateInterfaces. If a empty vector is returned then the <a class="el" href="classhardware__interface_1_1SystemInterface.html#afbd6274c3d0e2fe1fc7d7c812a6f6cc6">on_export_state_interfaces()</a> method is called. If a vector with StateInterfaces is returned then the exporting of the StateInterfaces is only done with this function and the ownership is transferred to the resource manager. The set_command(...), get_command(...), ..., can then not be used.</p>
+<p>Old way of exporting the StateInterfaces. If a empty vector is returned then the <a class="el" href="classhardware__interface_1_1SystemInterface.html#ada59268806548721d8071bdd32679d6b">on_export_state_interfaces()</a> method is called. If a vector with StateInterfaces is returned then the exporting of the StateInterfaces is only done with this function and the ownership is transferred to the resource manager. The set_command(...), get_command(...), ..., can then not be used.</p>
 <p>Note the ownership over the state interfaces is transferred to the caller.</p>
 <dl class="section return"><dt>Returns</dt><dd>vector of state interfaces </dd></dl>
 
@@ -610,8 +610,8 @@ CallbackReturn::ERROR if any error happens or data are missing. </dd></dl>
 
 </div>
 </div>
-<a id="a6edf539d85f05be8c70a9a138f51ace3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6edf539d85f05be8c70a9a138f51ace3">&#9670;&nbsp;</a></span>on_export_command_interfaces()</h2>
+<a id="a1edc6b6ae4adb6150780ad709d0572e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1edc6b6ae4adb6150780ad709d0572e1">&#9670;&nbsp;</a></span>on_export_command_interfaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -620,7 +620,7 @@ CallbackReturn::ERROR if any error happens or data are missing. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;CommandInterface::SharedPtr&gt; hardware_interface::SystemInterface::on_export_command_interfaces </td>
+          <td class="memname">virtual std::vector&lt;CommandInterface::SharedPtr&gt; hardware_interface::SystemInterface::on_export_command_interfaces </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -628,7 +628,7 @@ CallbackReturn::ERROR if any error happens or data are missing. </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -637,8 +637,8 @@ CallbackReturn::ERROR if any error happens or data are missing. </dd></dl>
 
 </div>
 </div>
-<a id="afbd6274c3d0e2fe1fc7d7c812a6f6cc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbd6274c3d0e2fe1fc7d7c812a6f6cc6">&#9670;&nbsp;</a></span>on_export_state_interfaces()</h2>
+<a id="ada59268806548721d8071bdd32679d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada59268806548721d8071bdd32679d6b">&#9670;&nbsp;</a></span>on_export_state_interfaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,7 +647,7 @@ CallbackReturn::ERROR if any error happens or data are missing. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;StateInterface::ConstSharedPtr&gt; hardware_interface::SystemInterface::on_export_state_interfaces </td>
+          <td class="memname">virtual std::vector&lt;StateInterface::ConstSharedPtr&gt; hardware_interface::SystemInterface::on_export_state_interfaces </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -655,7 +655,7 @@ CallbackReturn::ERROR if any error happens or data are missing. </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

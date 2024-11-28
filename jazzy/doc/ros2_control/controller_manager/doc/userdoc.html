@@ -72,6 +72,7 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#rqt-controller-manager">rqt_controller_manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#using-the-controller-manager-in-a-process">Using the Controller Manager in a Process</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#launching-controller-manager-with-ros2-control-node">Launching controller_manager with ros2_control_node</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#concepts">Concepts</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#restarting-all-controllers">Restarting all controllers</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#restarting-hardware">Restarting hardware</a></li>
@@ -425,6 +426,33 @@ This occurs whether the Nodes are siblings or exist in a hierarchy.</p>
 <span class="w">    </span><span class="n">executor</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;_target_node_name&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;some_optional_namespace&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">options</span><span class="p">);</span>
 </pre></div>
 </div>
+</section>
+<section id="launching-controller-manager-with-ros2-control-node">
+<h2>Launching controller_manager with ros2_control_node<a class="headerlink" href="#launching-controller-manager-with-ros2-control-node" title="Link to this heading"></a></h2>
+<p>The controller_manager can be launched with the ros2_control_node executable. The following example shows how to launch the controller_manager with the ros2_control_node executable:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">control_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span>
+    <span class="n">package</span><span class="o">=</span><span class="s2">&quot;controller_manager&quot;</span><span class="p">,</span>
+    <span class="n">executable</span><span class="o">=</span><span class="s2">&quot;ros2_control_node&quot;</span><span class="p">,</span>
+    <span class="n">parameters</span><span class="o">=</span><span class="p">[</span><span class="n">robot_controllers</span><span class="p">],</span>
+    <span class="n">output</span><span class="o">=</span><span class="s2">&quot;both&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>The ros2_control_node executable uses the following parameters from the <code class="docutils literal notranslate"><span class="pre">controller_manager</span></code> node:</p>
+<dl class="simple">
+<dt>lock_memory (optional; bool; default: false)</dt><dd><p>Locks the memory of the <code class="docutils literal notranslate"><span class="pre">controller_manager</span></code> node at startup to physical RAM in order to avoid page faults
+and to prevent the node from being swapped out to disk.
+Find more information about the setup for memory locking in the following link : <a class="reference external" href="https://access.redhat.com/solutions/61334">How to set ulimit values</a>
+The following command can be used to set the memory locking limit temporarily : <code class="docutils literal notranslate"><span class="pre">ulimit</span> <span class="pre">-l</span> <span class="pre">unlimited</span></code>.</p>
+</dd>
+<dt>cpu_affinity (optional; int; default: -1)</dt><dd><p>Sets the CPU affinity of the <code class="docutils literal notranslate"><span class="pre">controller_manager</span></code> node to the specified CPU core.
+The value of -1 means that the CPU affinity is not set.</p>
+</dd>
+<dt>thread_priority (optional; int; default: 50)</dt><dd><p>Sets the thread priority of the <code class="docutils literal notranslate"><span class="pre">controller_manager</span></code> node to the specified value. The value must be between 0 and 99.</p>
+</dd>
+<dt>use_sim_time (optional; bool; default: false)</dt><dd><p>Enables the use of simulation time in the <code class="docutils literal notranslate"><span class="pre">controller_manager</span></code> node.</p>
+</dd>
+</dl>
 </section>
 <section id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Link to this heading"></a></h2>

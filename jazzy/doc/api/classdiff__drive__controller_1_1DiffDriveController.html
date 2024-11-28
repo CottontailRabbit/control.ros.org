@@ -252,15 +252,15 @@ std::shared_ptr&lt; <a class="el" href="classrealtime__tools_1_1RealtimePublishe
 <tr class="memitem:adf13ba4f8b349277aed8a50e3e8db81d"><td class="memItemLeft" align="right" valign="top"><a id="adf13ba4f8b349277aed8a50e3e8db81d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>subscriber_is_active_</b> = false</td></tr>
 <tr class="separator:adf13ba4f8b349277aed8a50e3e8db81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa211d30182ce9721bd1a9c0e97bb6ac3"><td class="memItemLeft" align="right" valign="top"><a id="aa211d30182ce9721bd1a9c0e97bb6ac3"></a>
-rclcpp::Subscription&lt; Twist &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_command_subscriber_</b> = nullptr</td></tr>
-<tr class="separator:aa211d30182ce9721bd1a9c0e97bb6ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82602910eda55afbb0c3c13ff53152a"><td class="memItemLeft" align="right" valign="top"><a id="ab82602910eda55afbb0c3c13ff53152a"></a>
-<a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">realtime_tools::RealtimeBox</a>&lt; std::shared_ptr&lt; Twist &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>received_velocity_msg_ptr_</b> {nullptr}</td></tr>
-<tr class="separator:ab82602910eda55afbb0c3c13ff53152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedca17218bf2cad7b776bd8cf3680066"><td class="memItemLeft" align="right" valign="top"><a id="aedca17218bf2cad7b776bd8cf3680066"></a>
-std::queue&lt; Twist &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>previous_commands_</b></td></tr>
-<tr class="separator:aedca17218bf2cad7b776bd8cf3680066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1992b924f37cdc552239e216941fd7"><td class="memItemLeft" align="right" valign="top"><a id="afd1992b924f37cdc552239e216941fd7"></a>
+rclcpp::Subscription&lt; TwistStamped &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_command_subscriber_</b> = nullptr</td></tr>
+<tr class="separator:afd1992b924f37cdc552239e216941fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac26d3dbf4ad840b48eb3041a48eb2bf"><td class="memItemLeft" align="right" valign="top"><a id="aac26d3dbf4ad840b48eb3041a48eb2bf"></a>
+<a class="el" href="classrealtime__tools_1_1RealtimeBoxBase.html">realtime_tools::RealtimeBox</a>&lt; std::shared_ptr&lt; TwistStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>received_velocity_msg_ptr_</b> {nullptr}</td></tr>
+<tr class="separator:aac26d3dbf4ad840b48eb3041a48eb2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7adb326bda5c9729a37f5526edbbc85"><td class="memItemLeft" align="right" valign="top"><a id="ad7adb326bda5c9729a37f5526edbbc85"></a>
+std::queue&lt; TwistStamped &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>previous_commands_</b></td></tr>
+<tr class="separator:ad7adb326bda5c9729a37f5526edbbc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa73e6fd2b7b4096ceb58105f90c6d031"><td class="memItemLeft" align="right" valign="top"><a id="aa73e6fd2b7b4096ceb58105f90c6d031"></a>
 <a class="el" href="classdiff__drive__controller_1_1SpeedLimiter.html">SpeedLimiter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>limiter_linear_</b></td></tr>
 <tr class="separator:aa73e6fd2b7b4096ceb58105f90c6d031"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,11 +270,12 @@ std::queue&lt; Twist &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a634ba413f3941fc676fa51b8b724ebcc"><td class="memItemLeft" align="right" valign="top"><a id="a634ba413f3941fc676fa51b8b724ebcc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>publish_limited_velocity_</b> = false</td></tr>
 <tr class="separator:a634ba413f3941fc676fa51b8b724ebcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e4795212867be8da58d6b8082084be"><td class="memItemLeft" align="right" valign="top"><a id="ab0e4795212867be8da58d6b8082084be"></a>
-std::shared_ptr&lt; rclcpp::Publisher&lt; Twist &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>limited_velocity_publisher_</b> = nullptr</td></tr>
-<tr class="separator:ab0e4795212867be8da58d6b8082084be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7813676a2e4b458c5a6b9f571032a0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classrealtime__tools_1_1RealtimePublisher.html">realtime_tools::RealtimePublisher</a>&lt; Twist &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>realtime_limited_velocity_publisher_</b></td></tr>
-<tr class="separator:a1d7813676a2e4b458c5a6b9f571032a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d62844f5d47ddd1d77f6ba779e09ba"><td class="memItemLeft" align="right" valign="top"><a id="ad4d62844f5d47ddd1d77f6ba779e09ba"></a>
+std::shared_ptr&lt; rclcpp::Publisher&lt; TwistStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>limited_velocity_publisher_</b> = nullptr</td></tr>
+<tr class="separator:ad4d62844f5d47ddd1d77f6ba779e09ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea88a91caa792c2a2a51497a82d10a3b"><td class="memItemLeft" align="right" valign="top"><a id="aea88a91caa792c2a2a51497a82d10a3b"></a>
+std::shared_ptr&lt; <a class="el" href="classrealtime__tools_1_1RealtimePublisher.html">realtime_tools::RealtimePublisher</a>&lt; TwistStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>realtime_limited_velocity_publisher_</b> = nullptr</td></tr>
+<tr class="separator:aea88a91caa792c2a2a51497a82d10a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a36f21e33b0b0c2f5502cf4d37f9dc"><td class="memItemLeft" align="right" valign="top"><a id="a73a36f21e33b0b0c2f5502cf4d37f9dc"></a>
 rclcpp::Time&#160;</td><td class="memItemRight" valign="bottom"><b>previous_update_timestamp_</b> {0}</td></tr>
 <tr class="separator:a73a36f21e33b0b0c2f5502cf4d37f9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,30 +421,6 @@ std::vector&lt; <a class="el" href="classhardware__interface_1_1LoanedStateInter
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt;rclcpp::Publisher&lt;tf2_msgs::msg::TFMessage&gt; &gt; diff_drive_controller::DiffDriveController::odometry_transform_publisher_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="keyword">nullptr</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1d7813676a2e4b458c5a6b9f571032a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d7813676a2e4b458c5a6b9f571032a0">&#9670;&nbsp;</a></span>realtime_limited_velocity_publisher_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classrealtime__tools_1_1RealtimePublisher.html">realtime_tools::RealtimePublisher</a>&lt;Twist&gt; &gt; diff_drive_controller::DiffDriveController::realtime_limited_velocity_publisher_</td>
         </tr>
       </table>
   </td>
